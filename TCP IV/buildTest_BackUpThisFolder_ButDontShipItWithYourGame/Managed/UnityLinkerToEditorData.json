@@ -260,7 +260,9 @@
           },
           {
             "name": "LineRenderer",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/AR Scene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -569,6 +571,12 @@
             "icon": "package/com.unity.modules.identifiers"
           },
           {
+            "name": "Required by ImageConversion Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.imageconversion"
+          },
+          {
             "name": "Required by Input Module",
             "scenes": [],
             "dependencyType": 2,
@@ -811,6 +819,10 @@
         ]
       },
       {
+        "name": "ImageConversion",
+        "dependencies": []
+      },
+      {
         "name": "Input",
         "dependencies": [
           {
@@ -977,13 +989,17 @@
           },
           {
             "name": "Collider",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/AR Scene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "MeshCollider",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/AR Scene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -1155,6 +1171,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.identifiers"
+          },
+          {
+            "name": "Required by ImageConversion Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.imageconversion"
           },
           {
             "name": "Required by Input Module",

@@ -4,18 +4,39 @@
 
 
 
+template <typename R>
+struct VirtualFuncInvoker0
+{
+	typedef R (*Func)(void*, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
 
 struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D;
 struct List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65;
 struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
 struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
+struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
 struct PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89;
+struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
 struct TouchU5BU5D_t242545870BFCA81F368CCF82E00F9E2A7FB523B3;
 struct SectionU5BU5D_t9D3017555FFF42E71BE91904A2486EAF429F24C4;
+struct ARPuzzleController_t776357B432A230CBCAFF7915AF87AF79C2FB8D4F;
+struct ARPuzzleGenerator_t2EA9361BA79642586B2362D892AE55DA859925E4;
+struct AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03;
+struct AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0;
 struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184;
 struct CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B;
 struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3;
+struct Exception_t;
+struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
+struct GlobalJavaObjectRef_t20D8E5AAFC2EB2518FCABBF40465855E797FF0D8;
+struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
 struct InputManager_t29A2200021AE0E0EB6F34CB1B9DF031B3AE02677;
 struct Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3;
 struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71;
@@ -25,7 +46,9 @@ struct PuzzleGenerator_t11FA423B12F62389724203EDB502FA9974492E2C;
 struct PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA;
 struct Readme_tE17B99201D0F52BD5727638AD3F41072A65B3BBB;
 struct Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF;
+struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
 struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A;
+struct Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99;
 struct String_t;
 struct StyleSheet_t6FAF43FCDB45BC6BED0522A222FD4C1A9BB10428;
 struct Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4;
@@ -35,15 +58,56 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
 struct CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD;
 struct Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401;
 
+IL2CPP_EXTERN_C RuntimeClass* AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Exception_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____78ABB739E0CD4DF8B644375CD806C46DBBE8D0A036CF16C60254F5BAA021D367_FieldInfo_var;
-IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____A8F78C4DAAE2028608F179AF95D6E13E87C036D947A4B628954A5E1B2F5E040A_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____6D2880E8D38CE0B492BDB87D6DBBF10BF5F8FFDB3DCAFBC169BCE268DC670EA0_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____9952C414DE3285BF615E77005969C14A3EE65E61903965070131DABF12D8C103_FieldInfo_var;
+IL2CPP_EXTERN_C String_t* _stringLiteral46B913D7DFB659080ADF8DB6AAA4C762708B6DB7;
+IL2CPP_EXTERN_C String_t* _stringLiteral494FC693F0F8537430451B5700E8D880D301CD60;
+IL2CPP_EXTERN_C String_t* _stringLiteral4AE51AB2DFAA44F596AB86F7CA5E50049766B896;
+IL2CPP_EXTERN_C String_t* _stringLiteral84747C3F7D608CB12436E5B299537E4126DF191F;
+IL2CPP_EXTERN_C String_t* _stringLiteralB49E09910B8638E656812E9AE6E6999EC407709A;
+IL2CPP_EXTERN_C String_t* _stringLiteralDC287FCAC436B15DC550128AB4CCB9810A9EFCED;
+IL2CPP_EXTERN_C String_t* _stringLiteralDDA9220385ADA0F9F6B63D1E01BCBC40BBBE8341;
+IL2CPP_EXTERN_C const RuntimeMethod* ARPuzzleController_Configure_mEF51C565220E0F83616E931CA4CE17BB9E270B30_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ARPuzzleController_GetTopClosestPiece_m645260E4E80529322F06A1789629B47BFB68D7F4_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ARPuzzleController_ManagePiecesOrder_m5E591445295064B3B81BFEB6957C20904BEC3D36_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ARPuzzleController_SingleTouchBeganCallback_m85C98FC5F95D442FC056ACE3914A836306FFC8FE_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ARPuzzleController_SingleTouchDrag_m95B64A5342059B60E7C778D23F1C1E919FF411E4_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ARPuzzleController_SingleTouchEnded_mAEDA7499708DBB172E4647C596332B40B38D731E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ARPuzzleController_Start_m562904F25C12732F59406F051E1E433DB577A8EF_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ARPuzzleController_Update_m427AB584B7371E289D109C88B01DF73B768587A3_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ARPuzzleController__ctor_m9B3C2D55C9D6B4FAD141D768499DF62FF88023D8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ARPuzzleGenerator_ConfigureNeighbors_m80B006D0C2A5C5E84CB3EB6D747111749E364392_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ARPuzzleGenerator_ConfigurePieceNeighbors_mFA8AE1AA2260DE899D64D5C9793C7732B09502B4_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ARPuzzleGenerator_GenerateGrid_mB3F9F28A16B291C5C683655E2B08BFBAC489C684_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ARPuzzleGenerator_GetPuzzlePieces_mB215BDC81195D5975A0EEA88DBC234309BB66B67_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ARPuzzleGenerator_GridIndexFromPos_mD98AF18753E7F0A8F4C168A4E25D2C6874E147FC_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ARPuzzleGenerator_IndexToGridPos_mA166243229CB99B1CC85D8D272D65DC758114E2D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ARPuzzleGenerator_IsValidGridPos_m086A9B9FD1BFD8E7E8682485D8F2C891A08A879A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ARPuzzleGenerator_Start_m6CBE2625552E454C3AC27CDC613352F1D68592D0_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ARPuzzleGenerator__ctor_mCCC58123824CC9A9D2B5032E286C03DE1D1C890E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AndroidJavaObject_CallStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m398EA96C1DE1BB885F2B1DD0E00E8BBA86B49E63_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AndroidJavaObject_Call_TisString_t_m67FC2931E81004C3F259008314180511C3D2AF40_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AndroidJavaObject_GetStatic_TisString_t_mF408A1C0C6E5BF8154F00A450A97A51B2ABFCBDE_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisPuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA_m16855B96D2A8C8DE8C8AEB5D0B17CE2921B8B928_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ImageUtilities_GetAndroidDCIMPath_mAF750011373C8E8A2C89E47562D0C313F040BCAD_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ImageUtilities_GetTextureAtPath_m0623A8ED186CB0F5B1D8C193A3904A765F34B4D3_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ImageUtilities_SaveTextureToPath_m4C22015072109144C33BCD4112D4BDC7ADC6833C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ImageUtilities_SpriteFromTexture_m79A2CEB2DD2355FB965616452874B3594E888E68_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* InputManager_ManageInput_m8379563D8496B0C53A18F34DEC4C324DBF9B16E9_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* InputManager_ManageSingleInput_m81C8D9AA2668F9B10320A722D7849A3A9C5EB69C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* InputManager_Start_m1C1F4D73A508DB32B5D6E294F12240923279FB10_RuntimeMethod_var;
@@ -51,29 +115,55 @@ IL2CPP_EXTERN_C const RuntimeMethod* InputManager_Update_m5CEF4B04E7336E0F24B004
 IL2CPP_EXTERN_C const RuntimeMethod* InputManager__ctor_m52D2F3B9FA0D50C52BCC92486F49B300E9334C2A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_mC89B83BD54F15D87ADDB9E44902F580395C19126_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Clear_m3BE666F3578557354BE9C218B58FB994A6F76234_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Sort_mC8AB81EB601D6B86A0E00A347F0A97F0074F7DB9_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_ToArray_mAB9E54D84482C11845B11D52D4C3F1D73322A571_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mB5FE4A7A8A2E83525B2255E6D6F8ABD5B4DF1140_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m3D12B15F2132AE2799B1DB82BF669A2A0C182F2C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_m59EB93B979E6102D267EB8EA3F98741BE8D53734_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1__ctor_mF3D65C30ACED71826A2F8078A5D10F3CC827E420_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1_get_HasValue_mC149B1C717AF506BBE8932F2C1DC86C378D17EA8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1_get_Value_mE3B978271FFA8D9DEE17BFB34320A3C67BE148EA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Object_Instantiate_TisPuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA_mDD84FA2E5D75C5A43ED7EC1D2420E598570B9A73_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PuzzleController_Configure_m17290C5C46D44BE66FAA59C8AEF721225AA8E2F2_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* PuzzleController_GetClosestPiece_m98242F920BB6BCB9DB5B624D5D6EDEBB1DB8B6A8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PuzzleController_GetTopClosestPiece_m4AF0DB696DC3FA195BC74B7D6E3C452A9A04C6B7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PuzzleController_ManagePiecesOrder_m2BA049CFF3E60761882CB76953893EA751D61102_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PuzzleController_SingleTouchBeganCallback_m077875999D6CDDAA697412665C1F65517BD82ED4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PuzzleController_SingleTouchDrag_m464291E7F40A59E4DAC260D3117E6E737906722C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PuzzleController_SingleTouchEnded_mF0C3FD153E1B8C4C32CA6FC4597A17AF187CE8F4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PuzzleController_Start_mF925F33EBA882D2A123BBDE7A8298B2958108C2E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PuzzleController_Update_m32DB6378886A16A2143E8315053980EA7618641E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PuzzleController__ctor_m70DCD23007B193227EF6A1F118D07E0085A43D11_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PuzzleGenerator_ConfigureNeighbors_mC8C706BB50C281D963D75682FE1385FBA60882ED_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PuzzleGenerator_ConfigurePieceNeighbors_m47DF8F76D9B0A3F28C8FE1BEB05AC48A43E130F7_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PuzzleGenerator_GenerateGrid_m549F149D318939ED2F5951DAA15EF6F91ED316A0_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PuzzleGenerator_GetPuzzlePieces_mA22E55B0C0E795038D54055FD705E65D09395BED_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PuzzleGenerator_GridIndexFromPos_m35B16D699BFF93A8BC6BFCC69A3C71B45E8B5636_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PuzzleGenerator_IndexToGridPos_m718605045791541B3CE0B2CC7619AE6AEA2C268D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PuzzleGenerator_IsValidGridPos_m6C5E2E60661354A7696403819DDDB2457015710F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PuzzleGenerator_Start_mDB81F938305F0DBE3C96E3E519382FEB5CFD24AE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PuzzleGenerator__ctor_m6882BF3290C40B2E5207607D6192ED8F1AC4CCFB_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* PuzzlePiece_Configure_mF9B9CF3BD58105C023C7F37501C6A2A6F246D9B8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PuzzlePiece_CheckForNeighbors_mB1D58F78BCC76ED911DD69E8831D7F3173A0CBCF_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PuzzlePiece_CheckForValidation_m64677CF0B8B12F78A3A06AE6698DDD5038D8474F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PuzzlePiece_CompareTo_mFA06409D09FB045089126F9D1889A80A87D55F0C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PuzzlePiece_Configure_m27BC0BC65E57E5EDBBD7273C4E742A671DACD2F5_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PuzzlePiece_GetMinValidDistance_m8D7A34A08820DD4A48431C39481EFCEE1785F6A3_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PuzzlePiece_IsCloseToCorrectPosition_m51DF1F52E9B4E73184B68C85A8A00D309F8F660D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PuzzlePiece_Move_mEE90EA75DA7D07561521B25A59368005009A54A7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PuzzlePiece_SetNeighbors_m52C0162064C03CD335021CA63472173B89C45865_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PuzzlePiece_StartMoving_m7064651EF46605DE5F3927320F9581BF325CE2B5_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PuzzlePiece_StopMoving_m2109DD1200C2B4F3F5FE821E364F9262A8A51E66_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PuzzlePiece_Validate_m3D3097B75B988CCA9DA4090230A5D73F452D0E5D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PuzzlePiece__ctor_mE84B04E008D513EBFA5936C4640E9560107E751C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PuzzlePiece_get_IsValid_m3CDF9B64F0CCC924E0E7629B307F1007222D8504_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* PuzzlePiece_set_IsValid_m789DECED94569E894C3AD3D2E4156BB5EE732351_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* TransformExtensions_Clear_m5D7C90E32B3AB86E4852B78EC83136AEAEF6506F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* VectorExtensions_With_m3B32D157928737360FDF7B5BAB3CA3B47BA8A7A2_RuntimeMethod_var;
+struct Exception_t_marshaled_com;
+struct Exception_t_marshaled_pinvoke;
 
 struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
@@ -89,6 +179,9 @@ IL2CPP_EXTERN_C_END
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 struct U3CModuleU3E_tBB65183F1134474D09FF49B95625D25472B9BA8B 
+{
+};
+struct EmptyArray_1_tDF0DD7256B115243AA6BD5558417387A734240EE  : public RuntimeObject
 {
 };
 struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D  : public RuntimeObject
@@ -108,6 +201,25 @@ struct List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65  : public RuntimeObject
 struct U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA  : public RuntimeObject
 {
 };
+struct AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0  : public RuntimeObject
+{
+	GlobalJavaObjectRef_t20D8E5AAFC2EB2518FCABBF40465855E797FF0D8* ___m_jobject;
+	GlobalJavaObjectRef_t20D8E5AAFC2EB2518FCABBF40465855E797FF0D8* ___m_jclass;
+};
+struct Constants_t8D6DDE75059F83729DB837146AC979C90F0B7E80  : public RuntimeObject
+{
+};
+struct ImageUtilities_tC939F4E1D0BB2A8872F6A951E6CDA705BCEB9282  : public RuntimeObject
+{
+};
+struct String_t  : public RuntimeObject
+{
+	int32_t ____stringLength;
+	Il2CppChar ____firstChar;
+};
+struct TransformExtensions_t664E6D30EC42C10B7C44E145798723521FE91E5A  : public RuntimeObject
+{
+};
 struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tC95F24D0C6E6B77389433852BB389F39C692926E  : public RuntimeObject
 {
 };
@@ -120,12 +232,23 @@ struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_pinvoke
 struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
 {
 };
+struct VectorExtensions_t8F2FE077B0B6D7D25D37014AF6EDE60A99B56FE0  : public RuntimeObject
+{
+};
 struct Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401  : public RuntimeObject
 {
 	String_t* ___heading;
 	String_t* ___text;
 	String_t* ___linkText;
 	String_t* ___url;
+};
+struct Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 
+{
+	bool ___hasValue;
+	float ___value;
+};
+struct AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03  : public AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0
+{
 };
 struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22 
 {
@@ -163,6 +286,13 @@ struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974
 	float ___z;
 	float ___w;
 };
+struct Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D 
+{
+	float ___m_XMin;
+	float ___m_YMin;
+	float ___m_Width;
+	float ___m_Height;
+};
 struct Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C 
 {
 	float ___m_value;
@@ -171,6 +301,11 @@ struct Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7
 {
 	float ___x;
 	float ___y;
+};
+struct Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A 
+{
+	int32_t ___m_X;
+	int32_t ___m_Y;
 };
 struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 
 {
@@ -189,7 +324,7 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915
 	};
 };
 #pragma pack(push, tp, 1)
-struct __StaticArrayInitTypeSizeU3D109_tFDBB7174390B3D228BC1F1EA3DFBFD7CDA7A579B 
+struct __StaticArrayInitTypeSizeU3D238_tE4F4C36A5CF94DFBAEE45DDCFAD37AE99C3B58B0 
 {
 	union
 	{
@@ -199,12 +334,12 @@ struct __StaticArrayInitTypeSizeU3D109_tFDBB7174390B3D228BC1F1EA3DFBFD7CDA7A579B
 			{
 			};
 		};
-		uint8_t __StaticArrayInitTypeSizeU3D109_tFDBB7174390B3D228BC1F1EA3DFBFD7CDA7A579B__padding[109];
+		uint8_t __StaticArrayInitTypeSizeU3D238_tE4F4C36A5CF94DFBAEE45DDCFAD37AE99C3B58B0__padding[238];
 	};
 };
 #pragma pack(pop, tp)
 #pragma pack(push, tp, 1)
-struct __StaticArrayInitTypeSizeU3D200_tC1BC488283310E32C2FC279DD5836449C756F371 
+struct __StaticArrayInitTypeSizeU3D490_t406236E1E737B4D82F79633DD3A6A5FB0C0B952A 
 {
 	union
 	{
@@ -214,7 +349,7 @@ struct __StaticArrayInitTypeSizeU3D200_tC1BC488283310E32C2FC279DD5836449C756F371
 			{
 			};
 		};
-		uint8_t __StaticArrayInitTypeSizeU3D200_tC1BC488283310E32C2FC279DD5836449C756F371__padding[200];
+		uint8_t __StaticArrayInitTypeSizeU3D490_t406236E1E737B4D82F79633DD3A6A5FB0C0B952A__padding[490];
 	};
 };
 #pragma pack(pop, tp)
@@ -242,6 +377,63 @@ struct MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_marshaled_com
 	int32_t ___TotalFiles;
 	int32_t ___IsEditorOnly;
 };
+struct Exception_t  : public RuntimeObject
+{
+	String_t* ____className;
+	String_t* ____message;
+	RuntimeObject* ____data;
+	Exception_t* ____innerException;
+	String_t* ____helpURL;
+	RuntimeObject* ____stackTrace;
+	String_t* ____stackTraceString;
+	String_t* ____remoteStackTraceString;
+	int32_t ____remoteStackIndex;
+	RuntimeObject* ____dynamicMethods;
+	int32_t ____HResult;
+	String_t* ____source;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces;
+	IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832* ___native_trace_ips;
+	int32_t ___caught_in_unmanaged;
+};
+struct Exception_t_marshaled_pinvoke
+{
+	char* ____className;
+	char* ____message;
+	RuntimeObject* ____data;
+	Exception_t_marshaled_pinvoke* ____innerException;
+	char* ____helpURL;
+	Il2CppIUnknown* ____stackTrace;
+	char* ____stackTraceString;
+	char* ____remoteStackTraceString;
+	int32_t ____remoteStackIndex;
+	Il2CppIUnknown* ____dynamicMethods;
+	int32_t ____HResult;
+	char* ____source;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces;
+	Il2CppSafeArray* ___native_trace_ips;
+	int32_t ___caught_in_unmanaged;
+};
+struct Exception_t_marshaled_com
+{
+	Il2CppChar* ____className;
+	Il2CppChar* ____message;
+	RuntimeObject* ____data;
+	Exception_t_marshaled_com* ____innerException;
+	Il2CppChar* ____helpURL;
+	Il2CppIUnknown* ____stackTrace;
+	Il2CppChar* ____stackTraceString;
+	Il2CppChar* ____remoteStackTraceString;
+	int32_t ____remoteStackIndex;
+	Il2CppIUnknown* ____dynamicMethods;
+	int32_t ____HResult;
+	Il2CppChar* ____source;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces;
+	Il2CppSafeArray* ___native_trace_ips;
+	int32_t ___caught_in_unmanaged;
+};
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C  : public RuntimeObject
 {
 	intptr_t ___m_CachedPtr;
@@ -258,6 +450,14 @@ struct RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5
 {
 	intptr_t ___value;
 };
+struct RuntimePlatform_t9A8AAF204603076FCAAECCCC05DA386AEE7BF66E 
+{
+	int32_t ___value__;
+};
+struct TextureFormat_t87A73E4A3850D3410DC211676FC14B94226C1C1D 
+{
+	int32_t ___value__;
+};
 struct TouchPhase_t54E0A1AF80465997849420A72317B733E1D49A9E 
 {
 	int32_t ___value__;
@@ -273,6 +473,9 @@ struct State_tB6E013B3528B2EA654EBF983C88E90B2D897C080
 struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
 {
 };
+struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
 struct Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
 {
 };
@@ -283,6 +486,12 @@ struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A_marshaled_pinv
 {
 };
 struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A_marshaled_com : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_com
+{
+};
+struct Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
 {
 };
 struct Touch_t03E51455ED508492B3F278903A0114FA0E87B417 
@@ -318,6 +527,9 @@ struct Readme_tE17B99201D0F52BD5727638AD3F41072A65B3BBB  : public ScriptableObje
 struct Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
 {
 };
+struct Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4  : public Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700
+{
+};
 struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
 {
 };
@@ -328,6 +540,21 @@ struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184  : public Behaviour_t019
 struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
 {
 	CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B* ___m_CancellationTokenSource;
+};
+struct ARPuzzleController_t776357B432A230CBCAFF7915AF87AF79C2FB8D4F  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	ARPuzzleGenerator_t2EA9361BA79642586B2362D892AE55DA859925E4* ___arPuzzleGenerator;
+	float ___detectionRadius;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___clickedPosition;
+	PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* ___currentPiece;
+};
+struct ARPuzzleGenerator_t2EA9361BA79642586B2362D892AE55DA859925E4  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	ARPuzzleController_t776357B432A230CBCAFF7915AF87AF79C2FB8D4F* ___arPuzzleController;
+	PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* ___puzzlePiecePrefab;
+	int32_t ___gridSize;
+	float ___gridScale;
+	List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* ___puzzlePieces;
 };
 struct InputManager_t29A2200021AE0E0EB6F34CB1B9DF031B3AE02677  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -353,6 +580,13 @@ struct PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA  : public MonoBehav
 {
 	Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* ___renderer;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___startMovePos;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___correctPosition;
+	bool ___U3CIsValidU3Ek__BackingField;
+	PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* ___neighbors;
+};
+struct EmptyArray_1_tDF0DD7256B115243AA6BD5558417387A734240EE_StaticFields
+{
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___Value;
 };
 struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_StaticFields
 {
@@ -364,8 +598,16 @@ struct List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65_StaticFields
 };
 struct U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA_StaticFields
 {
-	__StaticArrayInitTypeSizeU3D109_tFDBB7174390B3D228BC1F1EA3DFBFD7CDA7A579B ___78ABB739E0CD4DF8B644375CD806C46DBBE8D0A036CF16C60254F5BAA021D367;
-	__StaticArrayInitTypeSizeU3D200_tC1BC488283310E32C2FC279DD5836449C756F371 ___A8F78C4DAAE2028608F179AF95D6E13E87C036D947A4B628954A5E1B2F5E040A;
+	__StaticArrayInitTypeSizeU3D238_tE4F4C36A5CF94DFBAEE45DDCFAD37AE99C3B58B0 ___6D2880E8D38CE0B492BDB87D6DBBF10BF5F8FFDB3DCAFBC169BCE268DC670EA0;
+	__StaticArrayInitTypeSizeU3D490_t406236E1E737B4D82F79633DD3A6A5FB0C0B952A ___9952C414DE3285BF615E77005969C14A3EE65E61903965070131DABF12D8C103;
+};
+struct AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_StaticFields
+{
+	bool ___enableDebugPrints;
+};
+struct String_t_StaticFields
+{
+	String_t* ___Empty;
 };
 struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
 {
@@ -375,6 +617,10 @@ struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
 struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_StaticFields
 {
 	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___identityQuaternion;
+};
+struct Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D_StaticFields
+{
+	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___kZero;
 };
 struct Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_StaticFields
 {
@@ -386,6 +632,15 @@ struct Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_StaticFields
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___rightVector;
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___positiveInfinityVector;
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___negativeInfinityVector;
+};
+struct Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A_StaticFields
+{
+	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A ___s_Zero;
+	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A ___s_One;
+	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A ___s_Up;
+	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A ___s_Down;
+	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A ___s_Left;
+	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A ___s_Right;
 };
 struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields
 {
@@ -400,6 +655,10 @@ struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___positiveInfinityVector;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___negativeInfinityVector;
 };
+struct Exception_t_StaticFields
+{
+	RuntimeObject* ___s_EDILock;
+};
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
 {
 	int32_t ___OffsetOfInstanceIDInCPlusPlusObject;
@@ -408,6 +667,10 @@ struct Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3_StaticFields
 {
 	int32_t ___k_ColorId;
 	int32_t ___k_MainTexId;
+};
+struct Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700_StaticFields
+{
+	int32_t ___GenerateAllMips;
 };
 struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_StaticFields
 {
@@ -418,38 +681,6 @@ struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_StaticFields
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-struct TouchU5BU5D_t242545870BFCA81F368CCF82E00F9E2A7FB523B3  : public RuntimeArray
-{
-	ALIGN_FIELD (8) Touch_t03E51455ED508492B3F278903A0114FA0E87B417 m_Items[1];
-
-	inline Touch_t03E51455ED508492B3F278903A0114FA0E87B417 GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline Touch_t03E51455ED508492B3F278903A0114FA0E87B417* GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, Touch_t03E51455ED508492B3F278903A0114FA0E87B417 value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-	}
-	inline Touch_t03E51455ED508492B3F278903A0114FA0E87B417 GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline Touch_t03E51455ED508492B3F278903A0114FA0E87B417* GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, Touch_t03E51455ED508492B3F278903A0114FA0E87B417 value)
-	{
-		m_Items[index] = value;
-	}
-};
 struct PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89  : public RuntimeArray
 {
 	ALIGN_FIELD (8) PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* m_Items[1];
@@ -484,34 +715,34 @@ struct PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89  : public Run
 		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
 	}
 };
-struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031  : public RuntimeArray
+struct TouchU5BU5D_t242545870BFCA81F368CCF82E00F9E2A7FB523B3  : public RuntimeArray
 {
-	ALIGN_FIELD (8) uint8_t m_Items[1];
+	ALIGN_FIELD (8) Touch_t03E51455ED508492B3F278903A0114FA0E87B417 m_Items[1];
 
-	inline uint8_t GetAt(il2cpp_array_size_t index) const
+	inline Touch_t03E51455ED508492B3F278903A0114FA0E87B417 GetAt(il2cpp_array_size_t index) const
 	{
 		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
 		return m_Items[index];
 	}
-	inline uint8_t* GetAddressAt(il2cpp_array_size_t index)
+	inline Touch_t03E51455ED508492B3F278903A0114FA0E87B417* GetAddressAt(il2cpp_array_size_t index)
 	{
 		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
 		return m_Items + index;
 	}
-	inline void SetAt(il2cpp_array_size_t index, uint8_t value)
+	inline void SetAt(il2cpp_array_size_t index, Touch_t03E51455ED508492B3F278903A0114FA0E87B417 value)
 	{
 		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
 		m_Items[index] = value;
 	}
-	inline uint8_t GetAtUnchecked(il2cpp_array_size_t index) const
+	inline Touch_t03E51455ED508492B3F278903A0114FA0E87B417 GetAtUnchecked(il2cpp_array_size_t index) const
 	{
 		return m_Items[index];
 	}
-	inline uint8_t* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	inline Touch_t03E51455ED508492B3F278903A0114FA0E87B417* GetAddressAtUnchecked(il2cpp_array_size_t index)
 	{
 		return m_Items + index;
 	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, uint8_t value)
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Touch_t03E51455ED508492B3F278903A0114FA0E87B417 value)
 	{
 		m_Items[index] = value;
 	}
@@ -550,39 +781,105 @@ struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918  : public RuntimeA
 		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
 	}
 };
+struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031  : public RuntimeArray
+{
+	ALIGN_FIELD (8) uint8_t m_Items[1];
+
+	inline uint8_t GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline uint8_t* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, uint8_t value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline uint8_t GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline uint8_t* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, uint8_t value)
+	{
+		m_Items[index] = value;
+	}
+};
 
 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Nullable_1__ctor_mF3D65C30ACED71826A2F8078A5D10F3CC827E420_gshared (Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75* __this, float ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Sort_m31071C3C6DF1FAD770119031BEA9315A2E3C1298_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___0_index, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Object_Instantiate_TisRuntimeObject_m5F38AE6B74636F569647D545E365C5579E5F59CE_gshared (RuntimeObject* ___0_original, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_position, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___2_rotation, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___3_parent, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* List_1_ToArray_mD7E4F8E7C11C3C67CB5739FCC0A6E86106A6291F_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Nullable_1_get_HasValue_mC149B1C717AF506BBE8932F2C1DC86C378D17EA8_gshared_inline (Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Nullable_1_get_Value_mE3B978271FFA8D9DEE17BFB34320A3C67BE148EA_gshared (Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AndroidJavaObject_GetStatic_TisRuntimeObject_m4EF4E4761A0A6E99E0A298F653E8129B1494E4C9_gshared (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, String_t* ___0_fieldName, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AndroidJavaObject_CallStatic_TisRuntimeObject_mCAFE27630F6092C4910E14592B050DACFCBE146F_gshared (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, String_t* ___0_methodName, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_gshared_inline (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AndroidJavaObject_Call_TisRuntimeObject_mA5AF1A9E0463CE91F0ACB6AC2FE0C1922B579EF7_gshared (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, String_t* ___0_methodName, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR void List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
 
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputManager_ManageInput_m8379563D8496B0C53A18F34DEC4C324DBF9B16E9 (InputManager_t29A2200021AE0E0EB6F34CB1B9DF031B3AE02677* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Input_get_touchCount_m057388BFC67A0F4CA53764B1022867ED81D01E39 (const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputManager_ManageSingleInput_m81C8D9AA2668F9B10320A722D7849A3A9C5EB69C (InputManager_t29A2200021AE0E0EB6F34CB1B9DF031B3AE02677* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TouchU5BU5D_t242545870BFCA81F368CCF82E00F9E2A7FB523B3* Input_get_touches_m7CFDF6848F3EC3A8FE458436B2B8BD14B5C65CEF (const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Touch_get_position_m41B9EB0F3F3E1BE98CEB388253A9E31979CB964A (Touch_t03E51455ED508492B3F278903A0114FA0E87B417* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF (const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_v, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Camera_ScreenToWorldPoint_m5EA3148F070985EC72127AAC3448D8D6ABE6E7E5 (Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_position, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Touch_get_phase_mB82409FB2BE1C32ABDBA6A72E52A099D28AB70B0 (Touch_t03E51455ED508492B3F278903A0114FA0E87B417* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PuzzleController_SingleTouchBeganCallback_m077875999D6CDDAA697412665C1F65517BD82ED4 (PuzzleController_t5FB47548353DBE183DA111B6B16C032777699839* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_worldPosition, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleController_SingleTouchDrag_m464291E7F40A59E4DAC260D3117E6E737906722C (PuzzleController_t5FB47548353DBE183DA111B6B16C032777699839* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_worldPosition, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* PuzzleGenerator_GetPuzzlePieces_mA22E55B0C0E795038D54055FD705E65D09395BED (PuzzleGenerator_t11FA423B12F62389724203EDB502FA9974492E2C* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* PuzzleController_GetClosestPiece_m98242F920BB6BCB9DB5B624D5D6EDEBB1DB8B6A8 (PuzzleController_t5FB47548353DBE183DA111B6B16C032777699839* __this, PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* ___0_puzzlePieces, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_worldPosition, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* ARPuzzleGenerator_GetPuzzlePieces_mB215BDC81195D5975A0EEA88DBC234309BB66B67 (ARPuzzleGenerator_t2EA9361BA79642586B2362D892AE55DA859925E4* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* ARPuzzleController_GetTopClosestPiece_m645260E4E80529322F06A1789629B47BFB68D7F4 (ARPuzzleController_t776357B432A230CBCAFF7915AF87AF79C2FB8D4F* __this, PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* ___0_puzzlePieces, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_worldPosition, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPuzzleController_ManagePiecesOrder_m5E591445295064B3B81BFEB6957C20904BEC3D36 (ARPuzzleController_t776357B432A230CBCAFF7915AF87AF79C2FB8D4F* __this, PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* ___0_pieces, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzlePiece_StartMoving_m7064651EF46605DE5F3927320F9581BF325CE2B5 (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzlePiece_Move_mEE90EA75DA7D07561521B25A59368005009A54A7 (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_moveDelta, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzlePiece_StopMoving_m2109DD1200C2B4F3F5FE821E364F9262A8A51E66 (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+inline void Nullable_1__ctor_mF3D65C30ACED71826A2F8078A5D10F3CC827E420 (Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75* __this, float ___0_value, const RuntimeMethod* method)
+{
+	((  void (*) (Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75*, float, const RuntimeMethod*))Nullable_1__ctor_mF3D65C30ACED71826A2F8078A5D10F3CC827E420_gshared)(__this, ___0_value, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 VectorExtensions_With_m3B32D157928737360FDF7B5BAB3CA3B47BA8A7A2 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_v, Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 ___1_x, Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 ___2_y, Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 ___3_z, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_forward_mAA55A7034304DF8B2152EAD49AE779FC4CA2EB4A_inline (const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) ;
+inline void List_1__ctor_mB5FE4A7A8A2E83525B2255E6D6F8ABD5B4DF1140 (List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool PuzzlePiece_get_IsValid_m3CDF9B64F0CCC924E0E7629B307F1007222D8504_inline (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_v, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_v, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleController_Configure_m17290C5C46D44BE66FAA59C8AEF721225AA8E2F2 (PuzzleController_t5FB47548353DBE183DA111B6B16C032777699839* __this, PuzzleGenerator_t11FA423B12F62389724203EDB502FA9974492E2C* ___0_puzzleGenerator, float ___1_gridScale, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleGenerator_GenerateGrid_m549F149D318939ED2F5951DAA15EF6F91ED316A0 (PuzzleGenerator_t11FA423B12F62389724203EDB502FA9974492E2C* __this, const RuntimeMethod* method) ;
+inline void List_1_Add_mC89B83BD54F15D87ADDB9E44902F580395C19126_inline (List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* __this, PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65*, PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
+}
+inline int32_t List_1_get_Count_m3D12B15F2132AE2799B1DB82BF669A2A0C182F2C_inline (List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
+}
+inline void List_1_Sort_mC8AB81EB601D6B86A0E00A347F0A97F0074F7DB9 (List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65*, const RuntimeMethod*))List_1_Sort_m31071C3C6DF1FAD770119031BEA9315A2E3C1298_gshared)(__this, method);
+}
+inline PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* List_1_get_Item_m59EB93B979E6102D267EB8EA3F98741BE8D53734 (List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* __this, int32_t ___0_index, const RuntimeMethod* method)
+{
+	return ((  PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* (*) (List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___0_index, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPuzzleController_Configure_mEF51C565220E0F83616E931CA4CE17BB9E270B30 (ARPuzzleController_t776357B432A230CBCAFF7915AF87AF79C2FB8D4F* __this, ARPuzzleGenerator_t2EA9361BA79642586B2362D892AE55DA859925E4* ___0_arPuzzleGenerator, float ___1_gridScale, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPuzzleGenerator_GenerateGrid_mB3F9F28A16B291C5C683655E2B08BFBAC489C684 (ARPuzzleGenerator_t2EA9361BA79642586B2362D892AE55DA859925E4* __this, const RuntimeMethod* method) ;
 inline void List_1_Clear_m3BE666F3578557354BE9C218B58FB994A6F76234_inline (List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* __this, const RuntimeMethod* method)
 {
 	((  void (*) (List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65*, const RuntimeMethod*))List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline)(__this, method);
@@ -593,27 +890,53 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2D
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_get_down_m7672D87B9C778FB2AEF7BB79758142D01166B493_inline (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Addition_m8136742CE6EE33BA4EB81C5F584678455917D2AE_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_a, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_b, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m5F87930F9B0828E5652E2D9D01ED907C01122C86_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ARPuzzleGenerator_GridIndexFromPos_mD98AF18753E7F0A8F4C168A4E25D2C6874E147FC (ARPuzzleGenerator_t2EA9361BA79642586B2362D892AE55DA859925E4* __this, int32_t ___0_x, int32_t ___1_y, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Random_get_onUnitSphere_mA7FD531C3043945E5EA290F670E79A78EFAC0D92 (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline (const RuntimeMethod* method) ;
 inline PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* Object_Instantiate_TisPuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA_mDD84FA2E5D75C5A43ED7EC1D2420E598570B9A73 (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* ___0_original, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_position, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___2_rotation, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___3_parent, const RuntimeMethod* method)
 {
 	return ((  PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* (*) (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*, const RuntimeMethod*))Object_Instantiate_TisRuntimeObject_m5F38AE6B74636F569647D545E365C5579E5F59CE_gshared)(___0_original, ___1_position, ___2_rotation, ___3_parent, method);
 }
-inline void List_1_Add_mC89B83BD54F15D87ADDB9E44902F580395C19126_inline (List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* __this, PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* ___0_item, const RuntimeMethod* method)
-{
-	((  void (*) (List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65*, PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
-}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___0_x, float ___1_y, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzlePiece_Configure_mF9B9CF3BD58105C023C7F37501C6A2A6F246D9B8 (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* __this, float ___0_scale, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_tiling, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___2_offset, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzlePiece_Configure_m27BC0BC65E57E5EDBBD7273C4E742A671DACD2F5 (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* __this, float ___0_scale, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_tiling, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___2_offset, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_correctPosition, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPuzzleGenerator_ConfigureNeighbors_m80B006D0C2A5C5E84CB3EB6D747111749E364392 (ARPuzzleGenerator_t2EA9361BA79642586B2362D892AE55DA859925E4* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPuzzleGenerator_ConfigurePieceNeighbors_mFA8AE1AA2260DE899D64D5C9793C7732B09502B4 (ARPuzzleGenerator_t2EA9361BA79642586B2362D892AE55DA859925E4* __this, PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* ___0_piece, int32_t ___1_index, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A ARPuzzleGenerator_IndexToGridPos_mA166243229CB99B1CC85D8D272D65DC758114E2D (ARPuzzleGenerator_t2EA9361BA79642586B2362D892AE55DA859925E4* __this, int32_t ___0_index, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Vector2Int_get_x_mA2CACB1B6E6B5AD0CCC32B2CD2EDCE3ECEB50576_inline (Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Vector2Int_get_y_m48454163ECF0B463FB5A16A0C4FC4B14DB0768B3_inline (Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ARPuzzleGenerator_IsValidGridPos_m086A9B9FD1BFD8E7E8682485D8F2C891A08A879A (ARPuzzleGenerator_t2EA9361BA79642586B2362D892AE55DA859925E4* __this, int32_t ___0_x, int32_t ___1_y, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, int32_t ___0_index, const RuntimeMethod* method) ;
+inline PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* Component_GetComponent_TisPuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA_m16855B96D2A8C8DE8C8AEB5D0B17CE2921B8B928 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzlePiece_SetNeighbors_m52C0162064C03CD335021CA63472173B89C45865 (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* __this, PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* ___0_puzzlePieces, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2Int__ctor_mC20D1312133EB8CB63EC11067088B043660F11CE_inline (Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A* __this, int32_t ___0_x, int32_t ___1_y, const RuntimeMethod* method) ;
 inline PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* List_1_ToArray_mAB9E54D84482C11845B11D52D4C3F1D73322A571 (List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* __this, const RuntimeMethod* method)
 {
 	return ((  PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* (*) (List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65*, const RuntimeMethod*))List_1_ToArray_mD7E4F8E7C11C3C67CB5739FCC0A6E86106A6291F_gshared)(__this, method);
 }
-inline void List_1__ctor_mB5FE4A7A8A2E83525B2255E6D6F8ABD5B4DF1140 (List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* __this, const RuntimeMethod* method)
-{
-	((  void (*) (List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
-}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputManager_ManageInput_m8379563D8496B0C53A18F34DEC4C324DBF9B16E9 (InputManager_t29A2200021AE0E0EB6F34CB1B9DF031B3AE02677* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Input_get_touchCount_m057388BFC67A0F4CA53764B1022867ED81D01E39 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputManager_ManageSingleInput_m81C8D9AA2668F9B10320A722D7849A3A9C5EB69C (InputManager_t29A2200021AE0E0EB6F34CB1B9DF031B3AE02677* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TouchU5BU5D_t242545870BFCA81F368CCF82E00F9E2A7FB523B3* Input_get_touches_m7CFDF6848F3EC3A8FE458436B2B8BD14B5C65CEF (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Touch_get_position_m41B9EB0F3F3E1BE98CEB388253A9E31979CB964A (Touch_t03E51455ED508492B3F278903A0114FA0E87B417* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Camera_ScreenToWorldPoint_m5EA3148F070985EC72127AAC3448D8D6ABE6E7E5 (Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_position, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Touch_get_phase_mB82409FB2BE1C32ABDBA6A72E52A099D28AB70B0 (Touch_t03E51455ED508492B3F278903A0114FA0E87B417* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PuzzleController_SingleTouchBeganCallback_m077875999D6CDDAA697412665C1F65517BD82ED4 (PuzzleController_t5FB47548353DBE183DA111B6B16C032777699839* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_worldPosition, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleController_SingleTouchDrag_m464291E7F40A59E4DAC260D3117E6E737906722C (PuzzleController_t5FB47548353DBE183DA111B6B16C032777699839* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_worldPosition, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleController_SingleTouchEnded_mF0C3FD153E1B8C4C32CA6FC4597A17AF187CE8F4 (PuzzleController_t5FB47548353DBE183DA111B6B16C032777699839* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* PuzzleGenerator_GetPuzzlePieces_mA22E55B0C0E795038D54055FD705E65D09395BED (PuzzleGenerator_t11FA423B12F62389724203EDB502FA9974492E2C* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* PuzzleController_GetTopClosestPiece_m4AF0DB696DC3FA195BC74B7D6E3C452A9A04C6B7 (PuzzleController_t5FB47548353DBE183DA111B6B16C032777699839* __this, PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* ___0_puzzlePieces, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_worldPosition, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleController_ManagePiecesOrder_m2BA049CFF3E60761882CB76953893EA751D61102 (PuzzleController_t5FB47548353DBE183DA111B6B16C032777699839* __this, PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* ___0_pieces, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleController_Configure_m17290C5C46D44BE66FAA59C8AEF721225AA8E2F2 (PuzzleController_t5FB47548353DBE183DA111B6B16C032777699839* __this, PuzzleGenerator_t11FA423B12F62389724203EDB502FA9974492E2C* ___0_puzzleGenerator, float ___1_gridScale, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleGenerator_GenerateGrid_m549F149D318939ED2F5951DAA15EF6F91ED316A0 (PuzzleGenerator_t11FA423B12F62389724203EDB502FA9974492E2C* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PuzzleGenerator_GridIndexFromPos_m35B16D699BFF93A8BC6BFCC69A3C71B45E8B5636 (PuzzleGenerator_t11FA423B12F62389724203EDB502FA9974492E2C* __this, int32_t ___0_x, int32_t ___1_y, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleGenerator_ConfigureNeighbors_mC8C706BB50C281D963D75682FE1385FBA60882ED (PuzzleGenerator_t11FA423B12F62389724203EDB502FA9974492E2C* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleGenerator_ConfigurePieceNeighbors_m47DF8F76D9B0A3F28C8FE1BEB05AC48A43E130F7 (PuzzleGenerator_t11FA423B12F62389724203EDB502FA9974492E2C* __this, PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* ___0_piece, int32_t ___1_index, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A PuzzleGenerator_IndexToGridPos_m718605045791541B3CE0B2CC7619AE6AEA2C268D (PuzzleGenerator_t11FA423B12F62389724203EDB502FA9974492E2C* __this, int32_t ___0_index, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PuzzleGenerator_IsValidGridPos_m6C5E2E60661354A7696403819DDDB2457015710F (PuzzleGenerator_t11FA423B12F62389724203EDB502FA9974492E2C* __this, int32_t ___0_x, int32_t ___1_y, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* Renderer_get_material_m5BA2A00816C4CC66580D4B2E409CF10718C15656 (Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* __this, const RuntimeMethod* method) ;
@@ -621,16 +944,72 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_set_mainTextureScale_mABC2B4327
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_set_mainTextureOffset_m87C139F275814719F9A10709C34E2132DFEB7A12 (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865 (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Lerp_m3A906D0530A94FAABB94F0F905E84D99BE85C3F8_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, float ___2_t, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PuzzlePiece_CheckForValidation_m64677CF0B8B12F78A3A06AE6698DDD5038D8474F (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzlePiece_CheckForNeighbors_mB1D58F78BCC76ED911DD69E8831D7F3173A0CBCF (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PuzzlePiece_IsCloseToCorrectPosition_m51DF1F52E9B4E73184B68C85A8A00D309F8F660D (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzlePiece_Validate_m3D3097B75B988CCA9DA4090230A5D73F452D0E5D (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PuzzlePiece_GetMinValidDistance_m8D7A34A08820DD4A48431C39481EFCEE1785F6A3 (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline (float ___0_a, float ___1_b, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Euler_m9262AB29E3E9CE94EF71051F38A28E82AEC73F90_inline (float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_right_mFF573AFBBB2186E7AFA1BA7CA271A78DF67E4EA0_inline (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Quaternion_op_Multiply_mE1EBA73F9173432B50F8F17CE8190C5A7986FB8C (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_rotation, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_point, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PuzzlePiece_set_IsValid_m789DECED94569E894C3AD3D2E4156BB5EE732351_inline (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* __this, bool ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___0_str0, String_t* ___1_str1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Single_CompareTo_m06F7868162EB392D3E99103D1A0BD27463C9E66F (float* __this, float ___0_value, const RuntimeMethod* method) ;
+inline bool Nullable_1_get_HasValue_mC149B1C717AF506BBE8932F2C1DC86C378D17EA8_inline (Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75*, const RuntimeMethod*))Nullable_1_get_HasValue_mC149B1C717AF506BBE8932F2C1DC86C378D17EA8_gshared_inline)(__this, method);
+}
+inline float Nullable_1_get_Value_mE3B978271FFA8D9DEE17BFB34320A3C67BE148EA (Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75* __this, const RuntimeMethod* method)
+{
+	return ((  float (*) (Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75*, const RuntimeMethod*))Nullable_1_get_Value_mE3B978271FFA8D9DEE17BFB34320A3C67BE148EA_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_SetParent_m6677538B60246D958DD91F931C50F969CCBB5250 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_p, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_obj, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Transform_get_childCount_mE9C29C702AB662CC540CA053EDE48BDAFA35B4B0 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Application_get_platform_m59EF7D6155D18891B24767F83F388160B1FF2138 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Application_get_persistentDataPath_mC58BD3E1A20732E0A536491DBCAE6505B1624399 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidJavaClass__ctor_mB5466169E1151B8CC44C8FED234D79984B431389 (AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* __this, String_t* ___0_className, const RuntimeMethod* method) ;
+inline String_t* AndroidJavaObject_GetStatic_TisString_t_mF408A1C0C6E5BF8154F00A450A97A51B2ABFCBDE (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, String_t* ___0_fieldName, const RuntimeMethod* method)
+{
+	return ((  String_t* (*) (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0*, String_t*, const RuntimeMethod*))AndroidJavaObject_GetStatic_TisRuntimeObject_m4EF4E4761A0A6E99E0A298F653E8129B1494E4C9_gshared)(__this, ___0_fieldName, method);
+}
+inline AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* AndroidJavaObject_CallStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m398EA96C1DE1BB885F2B1DD0E00E8BBA86B49E63 (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, String_t* ___0_methodName, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method)
+{
+	return ((  AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* (*) (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0*, String_t*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*, const RuntimeMethod*))AndroidJavaObject_CallStatic_TisRuntimeObject_mCAFE27630F6092C4910E14592B050DACFCBE146F_gshared)(__this, ___0_methodName, ___1_args, method);
+}
+inline ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline (const RuntimeMethod* method)
+{
+	return ((  ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* (*) (const RuntimeMethod*))Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_gshared_inline)(method);
+}
+inline String_t* AndroidJavaObject_Call_TisString_t_m67FC2931E81004C3F259008314180511C3D2AF40 (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, String_t* ___0_methodName, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method)
+{
+	return ((  String_t* (*) (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0*, String_t*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*, const RuntimeMethod*))AndroidJavaObject_Call_TisRuntimeObject_mA5AF1A9E0463CE91F0ACB6AC2FE0C1922B579EF7_gshared)(__this, ___0_methodName, ___1_args, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool File_Exists_m95E329ABBE3EAD6750FE1989BBA6884457136D4A (String_t* ___0_path, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* File_ReadAllBytes_m704CBBA3F130C94F5A3E0BE2A93D9E9D79DC3E24 (String_t* ___0_path, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Texture2D__ctor_mECF60A9EC0638EC353C02C8E99B6B465D23BE917 (Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* __this, int32_t ___0_width, int32_t ___1_height, int32_t ___2_textureFormat, bool ___3_mipChain, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ImageConversion_LoadImage_m1797365F78319B68638DE8BB02836F8D60760041 (Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___0_tex, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___1_data, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ImageConversion_EncodeToPNG_m0804AD31B83C653AEBB234F6CC31A02D4FA7C945 (Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___0_tex, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void File_WriteAllBytes_mC491031DA14AA9B591F62D6AD0181D090E081077 (String_t* ___0_path, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___1_bytes, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2 (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Rect__ctor_m18C3033D135097BEE424AAA68D91C706D2647F23_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, float ___0_x, float ___1_y, float ___2_width, float ___3_height, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_get_one_m9097EB8DC23C26118A591AF16702796C3EF51DFB_inline (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* Sprite_Create_m95F90AD74982187C087F4FA00947045A033D0BA1 (Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___0_texture, Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___1_rect, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___2_pivot, float ___3_pixelsPerUnit, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScriptableObject__ctor_mD037FDB0B487295EA47F79A4DB1BF1846C9087FF (ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B (RuntimeArray* ___0_array, RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 ___1_fldHandle, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline (float ___0_value, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Array_Clear_m50BAA3751899858B097D3FF2ED31F284703FE5CB (RuntimeArray* ___0_array, int32_t ___1_index, int32_t ___2_length, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Internal_FromEulerRad_mD0C4C0EFE1D70EC0EA4A92B11F1A4D5B0A134E49 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_euler, const RuntimeMethod* method) ;
 inline void List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4 (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method)
 {
 	((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4_gshared)(__this, ___0_item, method);
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Array_Clear_m50BAA3751899858B097D3FF2ED31F284703FE5CB (RuntimeArray* ___0_array, int32_t ___1_index, int32_t ___2_length, const RuntimeMethod* method) ;
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -644,7 +1023,1250 @@ inline void List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4 (List
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 86732
+// Method Definition Index: 86506
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPuzzleController_Start_m562904F25C12732F59406F051E1E433DB577A8EF (ARPuzzleController_t776357B432A230CBCAFF7915AF87AF79C2FB8D4F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ARPuzzleController_Start_m562904F25C12732F59406F051E1E433DB577A8EF_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(ARPuzzleController_Start_m562904F25C12732F59406F051E1E433DB577A8EF_RuntimeMethod_var);
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:20>
+		return;
+	}
+}
+// Method Definition Index: 86507
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPuzzleController_Update_m427AB584B7371E289D109C88B01DF73B768587A3 (ARPuzzleController_t776357B432A230CBCAFF7915AF87AF79C2FB8D4F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ARPuzzleController_Update_m427AB584B7371E289D109C88B01DF73B768587A3_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(ARPuzzleController_Update_m427AB584B7371E289D109C88B01DF73B768587A3_RuntimeMethod_var);
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:26>
+		return;
+	}
+}
+// Method Definition Index: 86508
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPuzzleController_Configure_mEF51C565220E0F83616E931CA4CE17BB9E270B30 (ARPuzzleController_t776357B432A230CBCAFF7915AF87AF79C2FB8D4F* __this, ARPuzzleGenerator_t2EA9361BA79642586B2362D892AE55DA859925E4* ___0_arPuzzleGenerator, float ___1_gridScale, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ARPuzzleController_Configure_mEF51C565220E0F83616E931CA4CE17BB9E270B30_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(ARPuzzleController_Configure_mEF51C565220E0F83616E931CA4CE17BB9E270B30_RuntimeMethod_var);
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:30>
+		ARPuzzleGenerator_t2EA9361BA79642586B2362D892AE55DA859925E4* L_0 = ___0_arPuzzleGenerator;
+		__this->___arPuzzleGenerator = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___arPuzzleGenerator), (void*)L_0);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:31>
+		float L_1 = ___1_gridScale;
+		__this->___detectionRadius = ((float)il2cpp_codegen_multiply(((float)(L_1/(2.0f))), (1.5f)));
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:32>
+		return;
+	}
+}
+// Method Definition Index: 86509
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ARPuzzleController_SingleTouchBeganCallback_m85C98FC5F95D442FC056ACE3914A836306FFC8FE (ARPuzzleController_t776357B432A230CBCAFF7915AF87AF79C2FB8D4F* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_worldPosition, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ARPuzzleController_SingleTouchBeganCallback_m85C98FC5F95D442FC056ACE3914A836306FFC8FE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(ARPuzzleController_SingleTouchBeganCallback_m85C98FC5F95D442FC056ACE3914A836306FFC8FE_RuntimeMethod_var);
+	PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* V_0 = NULL;
+	bool V_1 = false;
+	bool V_2 = false;
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:36>
+		ARPuzzleGenerator_t2EA9361BA79642586B2362D892AE55DA859925E4* L_0 = __this->___arPuzzleGenerator;
+		NullCheck(L_0);
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_1;
+		L_1 = ARPuzzleGenerator_GetPuzzlePieces_mB215BDC81195D5975A0EEA88DBC234309BB66B67(L_0, NULL);
+		V_0 = L_1;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:39>
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_2 = V_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___0_worldPosition;
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_4;
+		L_4 = ARPuzzleController_GetTopClosestPiece_m645260E4E80529322F06A1789629B47BFB68D7F4(__this, L_2, L_3, NULL);
+		__this->___currentPiece = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentPiece), (void*)L_4);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:41>
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_5 = __this->___currentPiece;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_6;
+		L_6 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_5, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		V_1 = L_6;
+		bool L_7 = V_1;
+		if (!L_7)
+		{
+			goto IL_002f;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:42>
+		V_2 = (bool)0;
+		goto IL_004e;
+	}
+
+IL_002f:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:44>
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_8 = V_0;
+		ARPuzzleController_ManagePiecesOrder_m5E591445295064B3B81BFEB6957C20904BEC3D36(__this, L_8, NULL);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:48>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = ___0_worldPosition;
+		__this->___clickedPosition = L_9;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:49>
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_10 = __this->___currentPiece;
+		NullCheck(L_10);
+		PuzzlePiece_StartMoving_m7064651EF46605DE5F3927320F9581BF325CE2B5(L_10, NULL);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:51>
+		V_2 = (bool)1;
+		goto IL_004e;
+	}
+
+IL_004e:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:52>
+		bool L_11 = V_2;
+		return L_11;
+	}
+}
+// Method Definition Index: 86510
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPuzzleController_SingleTouchDrag_m95B64A5342059B60E7C778D23F1C1E919FF411E4 (ARPuzzleController_t776357B432A230CBCAFF7915AF87AF79C2FB8D4F* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_worldPosition, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ARPuzzleController_SingleTouchDrag_m95B64A5342059B60E7C778D23F1C1E919FF411E4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(ARPuzzleController_SingleTouchDrag_m95B64A5342059B60E7C778D23F1C1E919FF411E4_RuntimeMethod_var);
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	bool V_1 = false;
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:56>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_worldPosition;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = __this->___clickedPosition;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
+		L_2 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_0, L_1, NULL);
+		V_0 = L_2;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:58>
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_3 = __this->___currentPiece;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_4;
+		L_4 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		V_1 = L_4;
+		bool L_5 = V_1;
+		if (!L_5)
+		{
+			goto IL_002b;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:59>
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_6 = __this->___currentPiece;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7 = V_0;
+		NullCheck(L_6);
+		PuzzlePiece_Move_mEE90EA75DA7D07561521B25A59368005009A54A7(L_6, L_7, NULL);
+	}
+
+IL_002b:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:60>
+		return;
+	}
+}
+// Method Definition Index: 86511
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPuzzleController_SingleTouchEnded_mAEDA7499708DBB172E4647C596332B40B38D731E (ARPuzzleController_t776357B432A230CBCAFF7915AF87AF79C2FB8D4F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ARPuzzleController_SingleTouchEnded_mAEDA7499708DBB172E4647C596332B40B38D731E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(ARPuzzleController_SingleTouchEnded_mAEDA7499708DBB172E4647C596332B40B38D731E_RuntimeMethod_var);
+	bool V_0 = false;
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:64>
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_0 = __this->___currentPiece;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		V_0 = L_1;
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:65>
+		goto IL_0026;
+	}
+
+IL_0013:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:67>
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_3 = __this->___currentPiece;
+		NullCheck(L_3);
+		PuzzlePiece_StopMoving_m2109DD1200C2B4F3F5FE821E364F9262A8A51E66(L_3, NULL);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:68>
+		__this->___currentPiece = (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentPiece), (void*)(PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA*)NULL);
+	}
+
+IL_0026:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:69>
+		return;
+	}
+}
+// Method Definition Index: 86512
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPuzzleController_ManagePiecesOrder_m5E591445295064B3B81BFEB6957C20904BEC3D36 (ARPuzzleController_t776357B432A230CBCAFF7915AF87AF79C2FB8D4F* __this, PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* ___0_pieces, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ARPuzzleController_ManagePiecesOrder_m5E591445295064B3B81BFEB6957C20904BEC3D36_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1__ctor_mF3D65C30ACED71826A2F8078A5D10F3CC827E420_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(ARPuzzleController_ManagePiecesOrder_m5E591445295064B3B81BFEB6957C20904BEC3D36_RuntimeMethod_var);
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	int32_t V_4 = 0;
+	bool V_5 = false;
+	bool V_6 = false;
+	bool V_7 = false;
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:73>
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_0 = ___0_pieces;
+		NullCheck(L_0);
+		V_0 = ((float)il2cpp_codegen_multiply(((float)((int32_t)(((RuntimeArray*)L_0)->max_length))), (0.100000001f)));
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:74>
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_1 = __this->___currentPiece;
+		NullCheck(L_1);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
+		L_2 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_1, NULL);
+		NullCheck(L_2);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
+		L_3 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_2, NULL);
+		float L_4 = L_3.___z;
+		V_1 = L_4;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:76>
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_5 = __this->___currentPiece;
+		NullCheck(L_5);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
+		L_6 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_5, NULL);
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_7 = __this->___currentPiece;
+		NullCheck(L_7);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8;
+		L_8 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_7, NULL);
+		NullCheck(L_8);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
+		L_9 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_8, NULL);
+		float L_10 = V_0;
+		Nullable_1__ctor_mF3D65C30ACED71826A2F8078A5D10F3CC827E420((&V_2), ((-L_10)), Nullable_1__ctor_mF3D65C30ACED71826A2F8078A5D10F3CC827E420_RuntimeMethod_var);
+		il2cpp_codegen_initobj((&V_3), sizeof(Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75));
+		Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 L_11 = V_3;
+		il2cpp_codegen_initobj((&V_3), sizeof(Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75));
+		Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 L_12 = V_3;
+		Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 L_13 = V_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
+		L_14 = VectorExtensions_With_m3B32D157928737360FDF7B5BAB3CA3B47BA8A7A2(L_9, L_11, L_12, L_13, NULL);
+		NullCheck(L_6);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_6, L_14, NULL);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:78>
+		V_4 = 0;
+		goto IL_00cd;
+	}
+
+IL_0069:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:80>
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_15 = ___0_pieces;
+		int32_t L_16 = V_4;
+		NullCheck(L_15);
+		int32_t L_17 = L_16;
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_18 = (L_15)->GetAt(static_cast<il2cpp_array_size_t>(L_17));
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_19 = __this->___currentPiece;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_20;
+		L_20 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_18, L_19, NULL);
+		V_5 = L_20;
+		bool L_21 = V_5;
+		if (!L_21)
+		{
+			goto IL_0081;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:81>
+		goto IL_00c7;
+	}
+
+IL_0081:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:83>
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_22 = ___0_pieces;
+		int32_t L_23 = V_4;
+		NullCheck(L_22);
+		int32_t L_24 = L_23;
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_25 = (L_22)->GetAt(static_cast<il2cpp_array_size_t>(L_24));
+		NullCheck(L_25);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_26;
+		L_26 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_25, NULL);
+		NullCheck(L_26);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27;
+		L_27 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_26, NULL);
+		float L_28 = L_27.___z;
+		float L_29 = V_1;
+		V_6 = (bool)((((float)L_28) < ((float)L_29))? 1 : 0);
+		bool L_30 = V_6;
+		if (!L_30)
+		{
+			goto IL_00c6;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:84>
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_31 = ___0_pieces;
+		int32_t L_32 = V_4;
+		NullCheck(L_31);
+		int32_t L_33 = L_32;
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_34 = (L_31)->GetAt(static_cast<il2cpp_array_size_t>(L_33));
+		NullCheck(L_34);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_35;
+		L_35 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_34, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_36 = L_35;
+		NullCheck(L_36);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_37;
+		L_37 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_36, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38;
+		L_38 = Vector3_get_forward_mAA55A7034304DF8B2152EAD49AE779FC4CA2EB4A_inline(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_39;
+		L_39 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_38, (0.100000001f), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_40;
+		L_40 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_37, L_39, NULL);
+		NullCheck(L_36);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_36, L_40, NULL);
+	}
+
+IL_00c6:
+	{
+	}
+
+IL_00c7:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:78>
+		int32_t L_41 = V_4;
+		V_4 = ((int32_t)il2cpp_codegen_add(L_41, 1));
+	}
+
+IL_00cd:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:78>
+		int32_t L_42 = V_4;
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_43 = ___0_pieces;
+		NullCheck(L_43);
+		V_7 = (bool)((((int32_t)L_42) < ((int32_t)((int32_t)(((RuntimeArray*)L_43)->max_length))))? 1 : 0);
+		bool L_44 = V_7;
+		if (L_44)
+		{
+			goto IL_0069;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:86>
+		return;
+	}
+}
+// Method Definition Index: 86513
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* ARPuzzleController_GetTopClosestPiece_m645260E4E80529322F06A1789629B47BFB68D7F4 (ARPuzzleController_t776357B432A230CBCAFF7915AF87AF79C2FB8D4F* __this, PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* ___0_puzzlePieces, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_worldPosition, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ARPuzzleController_GetTopClosestPiece_m645260E4E80529322F06A1789629B47BFB68D7F4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mC89B83BD54F15D87ADDB9E44902F580395C19126_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Sort_mC8AB81EB601D6B86A0E00A347F0A97F0074F7DB9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mB5FE4A7A8A2E83525B2255E6D6F8ABD5B4DF1140_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m3D12B15F2132AE2799B1DB82BF669A2A0C182F2C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m59EB93B979E6102D267EB8EA3F98741BE8D53734_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(ARPuzzleController_GetTopClosestPiece_m645260E4E80529322F06A1789629B47BFB68D7F4_RuntimeMethod_var);
+	List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* V_0 = NULL;
+	int32_t V_1 = 0;
+	float V_2 = 0.0f;
+	bool V_3 = false;
+	bool V_4 = false;
+	bool V_5 = false;
+	bool V_6 = false;
+	PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* V_7 = NULL;
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:90>
+		List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* L_0 = (List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65*)il2cpp_codegen_object_new(List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65_il2cpp_TypeInfo_var);
+		List_1__ctor_mB5FE4A7A8A2E83525B2255E6D6F8ABD5B4DF1140(L_0, List_1__ctor_mB5FE4A7A8A2E83525B2255E6D6F8ABD5B4DF1140_RuntimeMethod_var);
+		V_0 = L_0;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:92>
+		V_1 = 0;
+		goto IL_0058;
+	}
+
+IL_000b:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:95>
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_1 = ___0_puzzlePieces;
+		int32_t L_2 = V_1;
+		NullCheck(L_1);
+		int32_t L_3 = L_2;
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_4 = (L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_3));
+		NullCheck(L_4);
+		bool L_5;
+		L_5 = PuzzlePiece_get_IsValid_m3CDF9B64F0CCC924E0E7629B307F1007222D8504_inline(L_4, NULL);
+		V_3 = L_5;
+		bool L_6 = V_3;
+		if (!L_6)
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:96>
+		goto IL_0054;
+	}
+
+IL_001a:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:98>
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_7 = ___0_puzzlePieces;
+		int32_t L_8 = V_1;
+		NullCheck(L_7);
+		int32_t L_9 = L_8;
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_10 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
+		NullCheck(L_10);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11;
+		L_11 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_10, NULL);
+		NullCheck(L_11);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
+		L_12 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_11, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_13;
+		L_13 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_12, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
+		L_14 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_13, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15 = ___1_worldPosition;
+		float L_16;
+		L_16 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_14, L_15, NULL);
+		V_2 = L_16;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:100>
+		float L_17 = V_2;
+		float L_18 = __this->___detectionRadius;
+		V_4 = (bool)((((float)L_17) > ((float)L_18))? 1 : 0);
+		bool L_19 = V_4;
+		if (!L_19)
+		{
+			goto IL_0049;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:101>
+		goto IL_0054;
+	}
+
+IL_0049:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:103>
+		List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* L_20 = V_0;
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_21 = ___0_puzzlePieces;
+		int32_t L_22 = V_1;
+		NullCheck(L_21);
+		int32_t L_23 = L_22;
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_24 = (L_21)->GetAt(static_cast<il2cpp_array_size_t>(L_23));
+		NullCheck(L_20);
+		List_1_Add_mC89B83BD54F15D87ADDB9E44902F580395C19126_inline(L_20, L_24, List_1_Add_mC89B83BD54F15D87ADDB9E44902F580395C19126_RuntimeMethod_var);
+	}
+
+IL_0054:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:92>
+		int32_t L_25 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_25, 1));
+	}
+
+IL_0058:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:92>
+		int32_t L_26 = V_1;
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_27 = ___0_puzzlePieces;
+		NullCheck(L_27);
+		V_5 = (bool)((((int32_t)L_26) < ((int32_t)((int32_t)(((RuntimeArray*)L_27)->max_length))))? 1 : 0);
+		bool L_28 = V_5;
+		if (L_28)
+		{
+			goto IL_000b;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:106>
+		List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* L_29 = V_0;
+		NullCheck(L_29);
+		int32_t L_30;
+		L_30 = List_1_get_Count_m3D12B15F2132AE2799B1DB82BF669A2A0C182F2C_inline(L_29, List_1_get_Count_m3D12B15F2132AE2799B1DB82BF669A2A0C182F2C_RuntimeMethod_var);
+		V_6 = (bool)((((int32_t)((((int32_t)L_30) > ((int32_t)0))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_31 = V_6;
+		if (!L_31)
+		{
+			goto IL_007b;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:107>
+		V_7 = (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA*)NULL;
+		goto IL_008d;
+	}
+
+IL_007b:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:109>
+		List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* L_32 = V_0;
+		NullCheck(L_32);
+		List_1_Sort_mC8AB81EB601D6B86A0E00A347F0A97F0074F7DB9(L_32, List_1_Sort_mC8AB81EB601D6B86A0E00A347F0A97F0074F7DB9_RuntimeMethod_var);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:111>
+		List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* L_33 = V_0;
+		NullCheck(L_33);
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_34;
+		L_34 = List_1_get_Item_m59EB93B979E6102D267EB8EA3F98741BE8D53734(L_33, 0, List_1_get_Item_m59EB93B979E6102D267EB8EA3F98741BE8D53734_RuntimeMethod_var);
+		V_7 = L_34;
+		goto IL_008d;
+	}
+
+IL_008d:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleController.cs:112>
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_35 = V_7;
+		return L_35;
+	}
+}
+// Method Definition Index: 86514
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPuzzleController__ctor_m9B3C2D55C9D6B4FAD141D768499DF62FF88023D8 (ARPuzzleController_t776357B432A230CBCAFF7915AF87AF79C2FB8D4F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ARPuzzleController__ctor_m9B3C2D55C9D6B4FAD141D768499DF62FF88023D8_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(ARPuzzleController__ctor_m9B3C2D55C9D6B4FAD141D768499DF62FF88023D8_RuntimeMethod_var);
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 86515
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPuzzleGenerator_Start_m6CBE2625552E454C3AC27CDC613352F1D68592D0 (ARPuzzleGenerator_t2EA9361BA79642586B2362D892AE55DA859925E4* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ARPuzzleGenerator_Start_m6CBE2625552E454C3AC27CDC613352F1D68592D0_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(ARPuzzleGenerator_Start_m6CBE2625552E454C3AC27CDC613352F1D68592D0_RuntimeMethod_var);
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:17>
+		int32_t L_0 = __this->___gridSize;
+		__this->___gridScale = ((float)((4.0f)/((float)L_0)));
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:19>
+		ARPuzzleController_t776357B432A230CBCAFF7915AF87AF79C2FB8D4F* L_1 = __this->___arPuzzleController;
+		float L_2 = __this->___gridScale;
+		NullCheck(L_1);
+		ARPuzzleController_Configure_mEF51C565220E0F83616E931CA4CE17BB9E270B30(L_1, __this, L_2, NULL);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:21>
+		ARPuzzleGenerator_GenerateGrid_mB3F9F28A16B291C5C683655E2B08BFBAC489C684(__this, NULL);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:22>
+		return;
+	}
+}
+// Method Definition Index: 86516
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPuzzleGenerator_GenerateGrid_mB3F9F28A16B291C5C683655E2B08BFBAC489C684 (ARPuzzleGenerator_t2EA9361BA79642586B2362D892AE55DA859925E4* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ARPuzzleGenerator_GenerateGrid_mB3F9F28A16B291C5C683655E2B08BFBAC489C684_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mC89B83BD54F15D87ADDB9E44902F580395C19126_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Clear_m3BE666F3578557354BE9C218B58FB994A6F76234_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_Instantiate_TisPuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA_mDD84FA2E5D75C5A43ED7EC1D2420E598570B9A73_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(ARPuzzleGenerator_GenerateGrid_mB3F9F28A16B291C5C683655E2B08BFBAC489C684_RuntimeMethod_var);
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* V_5 = NULL;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_6;
+	memset((&V_6), 0, sizeof(V_6));
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_7;
+	memset((&V_7), 0, sizeof(V_7));
+	bool V_8 = false;
+	bool V_9 = false;
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:26>
+		List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* L_0 = __this->___puzzlePieces;
+		NullCheck(L_0);
+		List_1_Clear_m3BE666F3578557354BE9C218B58FB994A6F76234_inline(L_0, List_1_Clear_m3BE666F3578557354BE9C218B58FB994A6F76234_RuntimeMethod_var);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:28>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_1;
+		L_1 = Vector2_get_left_m851D1A435131CE336F60115E19FC8C21480284BC_inline(NULL);
+		float L_2 = __this->___gridScale;
+		int32_t L_3 = __this->___gridSize;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_4;
+		L_4 = Vector2_op_Multiply_m2D984B613020089BF5165BA4CA10988E2DC771FE_inline(L_1, ((float)il2cpp_codegen_multiply(L_2, ((float)L_3))), NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_5;
+		L_5 = Vector2_op_Division_m57A2DCD71E0CE7420851D705D1951F9238902AAB_inline(L_4, (2.0f), NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_6;
+		L_6 = Vector2_get_down_m7672D87B9C778FB2AEF7BB79758142D01166B493_inline(NULL);
+		float L_7 = __this->___gridScale;
+		int32_t L_8 = __this->___gridSize;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_9;
+		L_9 = Vector2_op_Multiply_m2D984B613020089BF5165BA4CA10988E2DC771FE_inline(L_6, ((float)il2cpp_codegen_multiply(L_7, ((float)L_8))), NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_10;
+		L_10 = Vector2_op_Division_m57A2DCD71E0CE7420851D705D1951F9238902AAB_inline(L_9, (2.0f), NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_11;
+		L_11 = Vector2_op_Addition_m8136742CE6EE33BA4EB81C5F584678455917D2AE_inline(L_5, L_10, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
+		L_12 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_11, NULL);
+		V_0 = L_12;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:30>
+		float* L_13 = (float*)(&(&V_0)->___x);
+		float* L_14 = L_13;
+		float L_15 = *((float*)L_14);
+		float L_16 = __this->___gridScale;
+		*((float*)L_14) = (float)((float)il2cpp_codegen_add(L_15, ((float)(L_16/(2.0f)))));
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:31>
+		float* L_17 = (float*)(&(&V_0)->___y);
+		float* L_18 = L_17;
+		float L_19 = *((float*)L_18);
+		float L_20 = __this->___gridScale;
+		*((float*)L_18) = (float)((float)il2cpp_codegen_add(L_19, ((float)(L_20/(2.0f)))));
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:33>
+		V_1 = 0;
+		goto IL_0180;
+	}
+
+IL_0091:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:35>
+		V_2 = 0;
+		goto IL_0169;
+	}
+
+IL_0099:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:37>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21 = V_0;
+		int32_t L_22 = V_1;
+		int32_t L_23 = V_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24;
+		memset((&L_24), 0, sizeof(L_24));
+		Vector3__ctor_m5F87930F9B0828E5652E2D9D01ED907C01122C86_inline((&L_24), ((float)L_22), ((float)L_23), NULL);
+		float L_25 = __this->___gridScale;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_26;
+		L_26 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_24, L_25, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27;
+		L_27 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_21, L_26, NULL);
+		V_3 = L_27;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:38>
+		float* L_28 = (float*)(&(&V_3)->___z);
+		float* L_29 = L_28;
+		float L_30 = *((float*)L_29);
+		int32_t L_31 = V_1;
+		int32_t L_32 = V_2;
+		int32_t L_33;
+		L_33 = ARPuzzleGenerator_GridIndexFromPos_mD98AF18753E7F0A8F4C168A4E25D2C6874E147FC(__this, L_31, L_32, NULL);
+		*((float*)L_29) = (float)((float)il2cpp_codegen_subtract(L_30, ((float)il2cpp_codegen_multiply((0.100000001f), ((float)L_33)))));
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:40>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_34;
+		L_34 = Random_get_onUnitSphere_mA7FD531C3043945E5EA290F670E79A78EFAC0D92(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_35;
+		L_35 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_34, (2.0f), NULL);
+		V_4 = L_35;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:41>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_36 = V_3;
+		float L_37 = L_36.___z;
+		(&V_4)->___z = L_37;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:43>
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_38 = __this->___puzzlePiecePrefab;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_39 = V_4;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_40;
+		L_40 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_41;
+		L_41 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_42;
+		L_42 = Object_Instantiate_TisPuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA_mDD84FA2E5D75C5A43ED7EC1D2420E598570B9A73(L_38, L_39, L_40, L_41, Object_Instantiate_TisPuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA_mDD84FA2E5D75C5A43ED7EC1D2420E598570B9A73_RuntimeMethod_var);
+		V_5 = L_42;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:45>
+		List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* L_43 = __this->___puzzlePieces;
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_44 = V_5;
+		NullCheck(L_43);
+		List_1_Add_mC89B83BD54F15D87ADDB9E44902F580395C19126_inline(L_43, L_44, List_1_Add_mC89B83BD54F15D87ADDB9E44902F580395C19126_RuntimeMethod_var);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:47>
+		int32_t L_45 = __this->___gridSize;
+		int32_t L_46 = __this->___gridSize;
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&V_6), ((float)((1.0f)/((float)L_45))), ((float)((1.0f)/((float)L_46))), NULL);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:48>
+		int32_t L_47 = V_1;
+		int32_t L_48 = __this->___gridSize;
+		int32_t L_49 = V_2;
+		int32_t L_50 = __this->___gridSize;
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&V_7), ((float)(((float)L_47)/((float)L_48))), ((float)(((float)L_49)/((float)L_50))), NULL);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:50>
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_51 = V_5;
+		float L_52 = __this->___gridScale;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_53 = V_6;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_54 = V_7;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_55 = V_3;
+		NullCheck(L_51);
+		PuzzlePiece_Configure_m27BC0BC65E57E5EDBBD7273C4E742A671DACD2F5(L_51, L_52, L_53, L_54, L_55, NULL);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:35>
+		int32_t L_56 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_56, 1));
+	}
+
+IL_0169:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:35>
+		int32_t L_57 = V_2;
+		int32_t L_58 = __this->___gridSize;
+		V_8 = (bool)((((int32_t)L_57) < ((int32_t)L_58))? 1 : 0);
+		bool L_59 = V_8;
+		if (L_59)
+		{
+			goto IL_0099;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:33>
+		int32_t L_60 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_60, 1));
+	}
+
+IL_0180:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:33>
+		int32_t L_61 = V_1;
+		int32_t L_62 = __this->___gridSize;
+		V_9 = (bool)((((int32_t)L_61) < ((int32_t)L_62))? 1 : 0);
+		bool L_63 = V_9;
+		if (L_63)
+		{
+			goto IL_0091;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:54>
+		ARPuzzleGenerator_ConfigureNeighbors_m80B006D0C2A5C5E84CB3EB6D747111749E364392(__this, NULL);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:55>
+		return;
+	}
+}
+// Method Definition Index: 86517
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPuzzleGenerator_ConfigureNeighbors_m80B006D0C2A5C5E84CB3EB6D747111749E364392 (ARPuzzleGenerator_t2EA9361BA79642586B2362D892AE55DA859925E4* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ARPuzzleGenerator_ConfigureNeighbors_m80B006D0C2A5C5E84CB3EB6D747111749E364392_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m3D12B15F2132AE2799B1DB82BF669A2A0C182F2C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m59EB93B979E6102D267EB8EA3F98741BE8D53734_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(ARPuzzleGenerator_ConfigureNeighbors_m80B006D0C2A5C5E84CB3EB6D747111749E364392_RuntimeMethod_var);
+	int32_t V_0 = 0;
+	bool V_1 = false;
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:59>
+		V_0 = 0;
+		goto IL_001d;
+	}
+
+IL_0005:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:60>
+		List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* L_0 = __this->___puzzlePieces;
+		int32_t L_1 = V_0;
+		NullCheck(L_0);
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_2;
+		L_2 = List_1_get_Item_m59EB93B979E6102D267EB8EA3F98741BE8D53734(L_0, L_1, List_1_get_Item_m59EB93B979E6102D267EB8EA3F98741BE8D53734_RuntimeMethod_var);
+		int32_t L_3 = V_0;
+		ARPuzzleGenerator_ConfigurePieceNeighbors_mFA8AE1AA2260DE899D64D5C9793C7732B09502B4(__this, L_2, L_3, NULL);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:59>
+		int32_t L_4 = V_0;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_4, 1));
+	}
+
+IL_001d:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:59>
+		int32_t L_5 = V_0;
+		List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* L_6 = __this->___puzzlePieces;
+		NullCheck(L_6);
+		int32_t L_7;
+		L_7 = List_1_get_Count_m3D12B15F2132AE2799B1DB82BF669A2A0C182F2C_inline(L_6, List_1_get_Count_m3D12B15F2132AE2799B1DB82BF669A2A0C182F2C_RuntimeMethod_var);
+		V_1 = (bool)((((int32_t)L_5) < ((int32_t)L_7))? 1 : 0);
+		bool L_8 = V_1;
+		if (L_8)
+		{
+			goto IL_0005;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:61>
+		return;
+	}
+}
+// Method Definition Index: 86518
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPuzzleGenerator_ConfigurePieceNeighbors_mFA8AE1AA2260DE899D64D5C9793C7732B09502B4 (ARPuzzleGenerator_t2EA9361BA79642586B2362D892AE55DA859925E4* __this, PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* ___0_piece, int32_t ___1_index, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ARPuzzleGenerator_ConfigurePieceNeighbors_mFA8AE1AA2260DE899D64D5C9793C7732B09502B4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisPuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA_m16855B96D2A8C8DE8C8AEB5D0B17CE2921B8B928_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(ARPuzzleGenerator_ConfigurePieceNeighbors_mFA8AE1AA2260DE899D64D5C9793C7732B09502B4_RuntimeMethod_var);
+	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
+	PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* V_3 = NULL;
+	PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* V_4 = NULL;
+	PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* V_5 = NULL;
+	PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* V_6 = NULL;
+	PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* G_B3_0 = NULL;
+	PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* G_B6_0 = NULL;
+	PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* G_B9_0 = NULL;
+	PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* G_B12_0 = NULL;
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:65>
+		int32_t L_0 = ___1_index;
+		Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A L_1;
+		L_1 = ARPuzzleGenerator_IndexToGridPos_mA166243229CB99B1CC85D8D272D65DC758114E2D(__this, L_0, NULL);
+		V_0 = L_1;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:66>
+		int32_t L_2;
+		L_2 = Vector2Int_get_x_mA2CACB1B6E6B5AD0CCC32B2CD2EDCE3ECEB50576_inline((&V_0), NULL);
+		V_1 = L_2;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:67>
+		int32_t L_3;
+		L_3 = Vector2Int_get_y_m48454163ECF0B463FB5A16A0C4FC4B14DB0768B3_inline((&V_0), NULL);
+		V_2 = L_3;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:69>
+		int32_t L_4 = V_1;
+		int32_t L_5 = V_2;
+		bool L_6;
+		L_6 = ARPuzzleGenerator_IsValidGridPos_m086A9B9FD1BFD8E7E8682485D8F2C891A08A879A(__this, ((int32_t)il2cpp_codegen_add(L_4, 1)), L_5, NULL);
+		if (L_6)
+		{
+			goto IL_0028;
+		}
+	}
+	{
+		G_B3_0 = ((PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA*)(NULL));
+		goto IL_0042;
+	}
+
+IL_0028:
+	{
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
+		L_7 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		int32_t L_8 = V_1;
+		int32_t L_9 = V_2;
+		int32_t L_10;
+		L_10 = ARPuzzleGenerator_GridIndexFromPos_mD98AF18753E7F0A8F4C168A4E25D2C6874E147FC(__this, ((int32_t)il2cpp_codegen_add(L_8, 1)), L_9, NULL);
+		NullCheck(L_7);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11;
+		L_11 = Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF(L_7, L_10, NULL);
+		NullCheck(L_11);
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_12;
+		L_12 = Component_GetComponent_TisPuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA_m16855B96D2A8C8DE8C8AEB5D0B17CE2921B8B928(L_11, Component_GetComponent_TisPuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA_m16855B96D2A8C8DE8C8AEB5D0B17CE2921B8B928_RuntimeMethod_var);
+		G_B3_0 = L_12;
+	}
+
+IL_0042:
+	{
+		V_3 = G_B3_0;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:70>
+		int32_t L_13 = V_1;
+		int32_t L_14 = V_2;
+		bool L_15;
+		L_15 = ARPuzzleGenerator_IsValidGridPos_m086A9B9FD1BFD8E7E8682485D8F2C891A08A879A(__this, L_13, ((int32_t)il2cpp_codegen_subtract(L_14, 1)), NULL);
+		if (L_15)
+		{
+			goto IL_0052;
+		}
+	}
+	{
+		G_B6_0 = ((PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA*)(NULL));
+		goto IL_006c;
+	}
+
+IL_0052:
+	{
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_16;
+		L_16 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		int32_t L_17 = V_1;
+		int32_t L_18 = V_2;
+		int32_t L_19;
+		L_19 = ARPuzzleGenerator_GridIndexFromPos_mD98AF18753E7F0A8F4C168A4E25D2C6874E147FC(__this, L_17, ((int32_t)il2cpp_codegen_subtract(L_18, 1)), NULL);
+		NullCheck(L_16);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_20;
+		L_20 = Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF(L_16, L_19, NULL);
+		NullCheck(L_20);
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_21;
+		L_21 = Component_GetComponent_TisPuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA_m16855B96D2A8C8DE8C8AEB5D0B17CE2921B8B928(L_20, Component_GetComponent_TisPuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA_m16855B96D2A8C8DE8C8AEB5D0B17CE2921B8B928_RuntimeMethod_var);
+		G_B6_0 = L_21;
+	}
+
+IL_006c:
+	{
+		V_4 = G_B6_0;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:71>
+		int32_t L_22 = V_1;
+		int32_t L_23 = V_2;
+		bool L_24;
+		L_24 = ARPuzzleGenerator_IsValidGridPos_m086A9B9FD1BFD8E7E8682485D8F2C891A08A879A(__this, ((int32_t)il2cpp_codegen_subtract(L_22, 1)), L_23, NULL);
+		if (L_24)
+		{
+			goto IL_007d;
+		}
+	}
+	{
+		G_B9_0 = ((PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA*)(NULL));
+		goto IL_0097;
+	}
+
+IL_007d:
+	{
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_25;
+		L_25 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		int32_t L_26 = V_1;
+		int32_t L_27 = V_2;
+		int32_t L_28;
+		L_28 = ARPuzzleGenerator_GridIndexFromPos_mD98AF18753E7F0A8F4C168A4E25D2C6874E147FC(__this, ((int32_t)il2cpp_codegen_subtract(L_26, 1)), L_27, NULL);
+		NullCheck(L_25);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_29;
+		L_29 = Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF(L_25, L_28, NULL);
+		NullCheck(L_29);
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_30;
+		L_30 = Component_GetComponent_TisPuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA_m16855B96D2A8C8DE8C8AEB5D0B17CE2921B8B928(L_29, Component_GetComponent_TisPuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA_m16855B96D2A8C8DE8C8AEB5D0B17CE2921B8B928_RuntimeMethod_var);
+		G_B9_0 = L_30;
+	}
+
+IL_0097:
+	{
+		V_5 = G_B9_0;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:72>
+		int32_t L_31 = V_1;
+		int32_t L_32 = V_2;
+		bool L_33;
+		L_33 = ARPuzzleGenerator_IsValidGridPos_m086A9B9FD1BFD8E7E8682485D8F2C891A08A879A(__this, L_31, ((int32_t)il2cpp_codegen_add(L_32, 1)), NULL);
+		if (L_33)
+		{
+			goto IL_00a8;
+		}
+	}
+	{
+		G_B12_0 = ((PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA*)(NULL));
+		goto IL_00c2;
+	}
+
+IL_00a8:
+	{
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_34;
+		L_34 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		int32_t L_35 = V_1;
+		int32_t L_36 = V_2;
+		int32_t L_37;
+		L_37 = ARPuzzleGenerator_GridIndexFromPos_mD98AF18753E7F0A8F4C168A4E25D2C6874E147FC(__this, L_35, ((int32_t)il2cpp_codegen_add(L_36, 1)), NULL);
+		NullCheck(L_34);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_38;
+		L_38 = Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF(L_34, L_37, NULL);
+		NullCheck(L_38);
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_39;
+		L_39 = Component_GetComponent_TisPuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA_m16855B96D2A8C8DE8C8AEB5D0B17CE2921B8B928(L_38, Component_GetComponent_TisPuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA_m16855B96D2A8C8DE8C8AEB5D0B17CE2921B8B928_RuntimeMethod_var);
+		G_B12_0 = L_39;
+	}
+
+IL_00c2:
+	{
+		V_6 = G_B12_0;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:74>
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_40 = ___0_piece;
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_41 = (PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89*)(PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89*)SZArrayNew(PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89_il2cpp_TypeInfo_var, (uint32_t)4);
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_42 = L_41;
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_43 = V_3;
+		NullCheck(L_42);
+		ArrayElementTypeCheck (L_42, L_43);
+		(L_42)->SetAt(static_cast<il2cpp_array_size_t>(0), (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA*)L_43);
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_44 = L_42;
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_45 = V_4;
+		NullCheck(L_44);
+		ArrayElementTypeCheck (L_44, L_45);
+		(L_44)->SetAt(static_cast<il2cpp_array_size_t>(1), (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA*)L_45);
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_46 = L_44;
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_47 = V_5;
+		NullCheck(L_46);
+		ArrayElementTypeCheck (L_46, L_47);
+		(L_46)->SetAt(static_cast<il2cpp_array_size_t>(2), (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA*)L_47);
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_48 = L_46;
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_49 = V_6;
+		NullCheck(L_48);
+		ArrayElementTypeCheck (L_48, L_49);
+		(L_48)->SetAt(static_cast<il2cpp_array_size_t>(3), (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA*)L_49);
+		NullCheck(L_40);
+		PuzzlePiece_SetNeighbors_m52C0162064C03CD335021CA63472173B89C45865(L_40, L_48, NULL);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:75>
+		return;
+	}
+}
+// Method Definition Index: 86519
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ARPuzzleGenerator_IsValidGridPos_m086A9B9FD1BFD8E7E8682485D8F2C891A08A879A (ARPuzzleGenerator_t2EA9361BA79642586B2362D892AE55DA859925E4* __this, int32_t ___0_x, int32_t ___1_y, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ARPuzzleGenerator_IsValidGridPos_m086A9B9FD1BFD8E7E8682485D8F2C891A08A879A_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(ARPuzzleGenerator_IsValidGridPos_m086A9B9FD1BFD8E7E8682485D8F2C891A08A879A_RuntimeMethod_var);
+	bool V_0 = false;
+	int32_t G_B5_0 = 0;
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:79>
+		int32_t L_0 = ___0_x;
+		if ((((int32_t)L_0) < ((int32_t)0)))
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		int32_t L_1 = ___0_x;
+		int32_t L_2 = __this->___gridSize;
+		if ((((int32_t)L_1) >= ((int32_t)L_2)))
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		int32_t L_3 = ___1_y;
+		if ((((int32_t)L_3) < ((int32_t)0)))
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		int32_t L_4 = ___1_y;
+		int32_t L_5 = __this->___gridSize;
+		G_B5_0 = ((((int32_t)L_4) < ((int32_t)L_5))? 1 : 0);
+		goto IL_001e;
+	}
+
+IL_001d:
+	{
+		G_B5_0 = 0;
+	}
+
+IL_001e:
+	{
+		V_0 = (bool)G_B5_0;
+		goto IL_0021;
+	}
+
+IL_0021:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:80>
+		bool L_6 = V_0;
+		return L_6;
+	}
+}
+// Method Definition Index: 86520
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ARPuzzleGenerator_GridIndexFromPos_mD98AF18753E7F0A8F4C168A4E25D2C6874E147FC (ARPuzzleGenerator_t2EA9361BA79642586B2362D892AE55DA859925E4* __this, int32_t ___0_x, int32_t ___1_y, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ARPuzzleGenerator_GridIndexFromPos_mD98AF18753E7F0A8F4C168A4E25D2C6874E147FC_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(ARPuzzleGenerator_GridIndexFromPos_mD98AF18753E7F0A8F4C168A4E25D2C6874E147FC_RuntimeMethod_var);
+	int32_t V_0 = 0;
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:84>
+		int32_t L_0 = ___1_y;
+		int32_t L_1 = __this->___gridSize;
+		int32_t L_2 = ___0_x;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_0, ((int32_t)il2cpp_codegen_multiply(L_1, L_2))));
+		goto IL_000e;
+	}
+
+IL_000e:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:85>
+		int32_t L_3 = V_0;
+		return L_3;
+	}
+}
+// Method Definition Index: 86521
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A ARPuzzleGenerator_IndexToGridPos_mA166243229CB99B1CC85D8D272D65DC758114E2D (ARPuzzleGenerator_t2EA9361BA79642586B2362D892AE55DA859925E4* __this, int32_t ___0_index, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ARPuzzleGenerator_IndexToGridPos_mA166243229CB99B1CC85D8D272D65DC758114E2D_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(ARPuzzleGenerator_IndexToGridPos_mA166243229CB99B1CC85D8D272D65DC758114E2D_RuntimeMethod_var);
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:89>
+		int32_t L_0 = ___0_index;
+		int32_t L_1 = __this->___gridSize;
+		V_0 = ((int32_t)(L_0/L_1));
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:90>
+		int32_t L_2 = ___0_index;
+		int32_t L_3 = __this->___gridSize;
+		V_1 = il2cpp_codegen_cast_double_to_int<int32_t>((fmodf(((float)L_2), ((float)L_3))));
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:92>
+		int32_t L_4 = V_0;
+		int32_t L_5 = V_1;
+		Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A L_6;
+		memset((&L_6), 0, sizeof(L_6));
+		Vector2Int__ctor_mC20D1312133EB8CB63EC11067088B043660F11CE_inline((&L_6), L_4, L_5, NULL);
+		V_2 = L_6;
+		goto IL_0020;
+	}
+
+IL_0020:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:93>
+		Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A L_7 = V_2;
+		return L_7;
+	}
+}
+// Method Definition Index: 86522
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* ARPuzzleGenerator_GetPuzzlePieces_mB215BDC81195D5975A0EEA88DBC234309BB66B67 (ARPuzzleGenerator_t2EA9361BA79642586B2362D892AE55DA859925E4* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ARPuzzleGenerator_GetPuzzlePieces_mB215BDC81195D5975A0EEA88DBC234309BB66B67_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_ToArray_mAB9E54D84482C11845B11D52D4C3F1D73322A571_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(ARPuzzleGenerator_GetPuzzlePieces_mB215BDC81195D5975A0EEA88DBC234309BB66B67_RuntimeMethod_var);
+	PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* V_0 = NULL;
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:96>
+		List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* L_0 = __this->___puzzlePieces;
+		NullCheck(L_0);
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_1;
+		L_1 = List_1_ToArray_mAB9E54D84482C11845B11D52D4C3F1D73322A571(L_0, List_1_ToArray_mAB9E54D84482C11845B11D52D4C3F1D73322A571_RuntimeMethod_var);
+		V_0 = L_1;
+		goto IL_000f;
+	}
+
+IL_000f:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:97>
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_2 = V_0;
+		return L_2;
+	}
+}
+// Method Definition Index: 86523
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARPuzzleGenerator__ctor_mCCC58123824CC9A9D2B5032E286C03DE1D1C890E (ARPuzzleGenerator_t2EA9361BA79642586B2362D892AE55DA859925E4* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ARPuzzleGenerator__ctor_mCCC58123824CC9A9D2B5032E286C03DE1D1C890E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mB5FE4A7A8A2E83525B2255E6D6F8ABD5B4DF1140_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(ARPuzzleGenerator__ctor_mCCC58123824CC9A9D2B5032E286C03DE1D1C890E_RuntimeMethod_var);
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/ARPuzzleGenerator.cs:13>
+		List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* L_0 = (List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65*)il2cpp_codegen_object_new(List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65_il2cpp_TypeInfo_var);
+		List_1__ctor_mB5FE4A7A8A2E83525B2255E6D6F8ABD5B4DF1140(L_0, List_1__ctor_mB5FE4A7A8A2E83525B2255E6D6F8ABD5B4DF1140_RuntimeMethod_var);
+		__this->___puzzlePieces = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___puzzlePieces), (void*)L_0);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 86524
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputManager_Start_m1C1F4D73A508DB32B5D6E294F12240923279FB10 (InputManager_t29A2200021AE0E0EB6F34CB1B9DF031B3AE02677* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -661,7 +2283,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputManager_Start_m1C1F4D73A508DB32B5D6
 		return;
 	}
 }
-// Method Definition Index: 86733
+// Method Definition Index: 86525
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputManager_Update_m5CEF4B04E7336E0F24B004F98C71799F3DFD5656 (InputManager_t29A2200021AE0E0EB6F34CB1B9DF031B3AE02677* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -678,7 +2300,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputManager_Update_m5CEF4B04E7336E0F24B
 		return;
 	}
 }
-// Method Definition Index: 86734
+// Method Definition Index: 86526
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputManager_ManageInput_m8379563D8496B0C53A18F34DEC4C324DBF9B16E9 (InputManager_t29A2200021AE0E0EB6F34CB1B9DF031B3AE02677* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -711,7 +2333,7 @@ IL_0016:
 		return;
 	}
 }
-// Method Definition Index: 86735
+// Method Definition Index: 86527
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputManager_ManageSingleInput_m81C8D9AA2668F9B10320A722D7849A3A9C5EB69C (InputManager_t29A2200021AE0E0EB6F34CB1B9DF031B3AE02677* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -731,6 +2353,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputManager_ManageSingleInput_m81C8D9AA
 	bool V_5 = false;
 	bool V_6 = false;
 	bool V_7 = false;
+	bool V_8 = false;
 	{
 		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/InputManager.cs:33>
 		TouchU5BU5D_t242545870BFCA81F368CCF82E00F9E2A7FB523B3* L_0;
@@ -768,23 +2391,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputManager_ManageSingleInput_m81C8D9AA
 		{
 			case 0:
 			{
-				goto IL_005a;
+				goto IL_005e;
 			}
 			case 1:
 			{
-				goto IL_0078;
+				goto IL_007c;
 			}
 			case 2:
 			{
-				goto IL_0096;
+				goto IL_009a;
+			}
+			case 3:
+			{
+				goto IL_00b8;
 			}
 		}
 	}
 	{
-		goto IL_00b4;
+		goto IL_00d5;
 	}
 
-IL_005a:
+IL_005e:
 	{
 		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/InputManager.cs:46>
 		PuzzleController_t5FB47548353DBE183DA111B6B16C032777699839* L_11 = __this->___puzzleController;
@@ -796,23 +2423,23 @@ IL_005a:
 		bool L_14 = V_5;
 		if (!L_14)
 		{
-			goto IL_0076;
+			goto IL_007a;
 		}
 	}
 	{
 		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/InputManager.cs:49>
 		__this->___state = 1;
 		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/InputManager.cs:51>
-		goto IL_00b6;
+		goto IL_00d7;
 	}
 
-IL_0076:
+IL_007a:
 	{
 		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/InputManager.cs:54>
-		goto IL_00b6;
+		goto IL_00d7;
 	}
 
-IL_0078:
+IL_007c:
 	{
 		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/InputManager.cs:58>
 		int32_t L_15 = __this->___state;
@@ -820,7 +2447,7 @@ IL_0078:
 		bool L_16 = V_6;
 		if (!L_16)
 		{
-			goto IL_0094;
+			goto IL_0098;
 		}
 	}
 	{
@@ -831,13 +2458,13 @@ IL_0078:
 		PuzzleController_SingleTouchDrag_m464291E7F40A59E4DAC260D3117E6E737906722C(L_17, L_18, NULL);
 	}
 
-IL_0094:
+IL_0098:
 	{
 		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/InputManager.cs:61>
-		goto IL_00b6;
+		goto IL_00d7;
 	}
 
-IL_0096:
+IL_009a:
 	{
 		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/InputManager.cs:65>
 		int32_t L_19 = __this->___state;
@@ -845,7 +2472,7 @@ IL_0096:
 		bool L_20 = V_7;
 		if (!L_20)
 		{
-			goto IL_00b2;
+			goto IL_00b6;
 		}
 	}
 	{
@@ -856,25 +2483,49 @@ IL_0096:
 		PuzzleController_SingleTouchDrag_m464291E7F40A59E4DAC260D3117E6E737906722C(L_21, L_22, NULL);
 	}
 
-IL_00b2:
-	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/InputManager.cs:68>
-		goto IL_00b6;
-	}
-
-IL_00b4:
-	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/InputManager.cs:71>
-		goto IL_00b6;
-	}
-
 IL_00b6:
 	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/InputManager.cs:68>
+		goto IL_00d7;
+	}
+
+IL_00b8:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/InputManager.cs:72>
+		int32_t L_23 = __this->___state;
+		V_8 = (bool)((((int32_t)L_23) == ((int32_t)1))? 1 : 0);
+		bool L_24 = V_8;
+		if (!L_24)
+		{
+			goto IL_00d3;
+		}
+	}
+	{
 		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/InputManager.cs:73>
+		PuzzleController_t5FB47548353DBE183DA111B6B16C032777699839* L_25 = __this->___puzzleController;
+		NullCheck(L_25);
+		PuzzleController_SingleTouchEnded_mF0C3FD153E1B8C4C32CA6FC4597A17AF187CE8F4(L_25, NULL);
+	}
+
+IL_00d3:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/InputManager.cs:75>
+		goto IL_00d7;
+	}
+
+IL_00d5:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/InputManager.cs:78>
+		goto IL_00d7;
+	}
+
+IL_00d7:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/InputManager.cs:80>
 		return;
 	}
 }
-// Method Definition Index: 86736
+// Method Definition Index: 86528
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputManager__ctor_m52D2F3B9FA0D50C52BCC92486F49B300E9334C2A (InputManager_t29A2200021AE0E0EB6F34CB1B9DF031B3AE02677* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -905,7 +2556,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputManager__ctor_m52D2F3B9FA0D50C52BCC
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 86737
+// Method Definition Index: 86529
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleController_Start_mF925F33EBA882D2A123BBDE7A8298B2958108C2E (PuzzleController_t5FB47548353DBE183DA111B6B16C032777699839* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -916,11 +2567,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleController_Start_mF925F33EBA882D2A
 	}
 	ProfilerMethodSentry _profilerMethodSentry(PuzzleController_Start_mF925F33EBA882D2A123BBDE7A8298B2958108C2E_RuntimeMethod_var);
 	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:21>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:23>
 		return;
 	}
 }
-// Method Definition Index: 86738
+// Method Definition Index: 86530
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleController_Update_m32DB6378886A16A2143E8315053980EA7618641E (PuzzleController_t5FB47548353DBE183DA111B6B16C032777699839* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -931,11 +2582,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleController_Update_m32DB6378886A16A
 	}
 	ProfilerMethodSentry _profilerMethodSentry(PuzzleController_Update_m32DB6378886A16A2143E8315053980EA7618641E_RuntimeMethod_var);
 	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:27>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:29>
 		return;
 	}
 }
-// Method Definition Index: 86739
+// Method Definition Index: 86531
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleController_Configure_m17290C5C46D44BE66FAA59C8AEF721225AA8E2F2 (PuzzleController_t5FB47548353DBE183DA111B6B16C032777699839* __this, PuzzleGenerator_t11FA423B12F62389724203EDB502FA9974492E2C* ___0_puzzleGenerator, float ___1_gridScale, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -946,18 +2597,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleController_Configure_m17290C5C46D4
 	}
 	ProfilerMethodSentry _profilerMethodSentry(PuzzleController_Configure_m17290C5C46D44BE66FAA59C8AEF721225AA8E2F2_RuntimeMethod_var);
 	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:31>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:33>
 		PuzzleGenerator_t11FA423B12F62389724203EDB502FA9974492E2C* L_0 = ___0_puzzleGenerator;
 		__this->___puzzleGenerator = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___puzzleGenerator), (void*)L_0);
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:32>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:34>
 		float L_1 = ___1_gridScale;
-		__this->___detectionRadius = ((float)il2cpp_codegen_multiply(L_1, (1.5f)));
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:33>
+		__this->___detectionRadius = ((float)il2cpp_codegen_multiply(((float)(L_1/(2.0f))), (1.5f)));
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:35>
 		return;
 	}
 }
-// Method Definition Index: 86740
+// Method Definition Index: 86532
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PuzzleController_SingleTouchBeganCallback_m077875999D6CDDAA697412665C1F65517BD82ED4 (PuzzleController_t5FB47548353DBE183DA111B6B16C032777699839* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_worldPosition, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -972,20 +2623,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PuzzleController_SingleTouchBeganCallbac
 	bool V_1 = false;
 	bool V_2 = false;
 	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:37>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:39>
 		PuzzleGenerator_t11FA423B12F62389724203EDB502FA9974492E2C* L_0 = __this->___puzzleGenerator;
 		NullCheck(L_0);
 		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_1;
 		L_1 = PuzzleGenerator_GetPuzzlePieces_mA22E55B0C0E795038D54055FD705E65D09395BED(L_0, NULL);
 		V_0 = L_1;
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:40>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:42>
 		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_2 = V_0;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___0_worldPosition;
 		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_4;
-		L_4 = PuzzleController_GetClosestPiece_m98242F920BB6BCB9DB5B624D5D6EDEBB1DB8B6A8(__this, L_2, L_3, NULL);
+		L_4 = PuzzleController_GetTopClosestPiece_m4AF0DB696DC3FA195BC74B7D6E3C452A9A04C6B7(__this, L_2, L_3, NULL);
 		__this->___currentPiece = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentPiece), (void*)L_4);
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:42>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:44>
 		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_5 = __this->___currentPiece;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_6;
@@ -998,33 +2649,36 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PuzzleController_SingleTouchBeganCallbac
 		}
 	}
 	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:43>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:45>
 		V_2 = (bool)0;
-		goto IL_0046;
+		goto IL_004e;
 	}
 
 IL_002f:
 	{
 		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:47>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___0_worldPosition;
-		__this->___clickedPosition = L_8;
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:48>
-		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_9 = __this->___currentPiece;
-		NullCheck(L_9);
-		PuzzlePiece_StartMoving_m7064651EF46605DE5F3927320F9581BF325CE2B5(L_9, NULL);
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:50>
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_8 = V_0;
+		PuzzleController_ManagePiecesOrder_m2BA049CFF3E60761882CB76953893EA751D61102(__this, L_8, NULL);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:51>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = ___0_worldPosition;
+		__this->___clickedPosition = L_9;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:52>
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_10 = __this->___currentPiece;
+		NullCheck(L_10);
+		PuzzlePiece_StartMoving_m7064651EF46605DE5F3927320F9581BF325CE2B5(L_10, NULL);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:54>
 		V_2 = (bool)1;
-		goto IL_0046;
+		goto IL_004e;
 	}
 
-IL_0046:
+IL_004e:
 	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:51>
-		bool L_10 = V_2;
-		return L_10;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:55>
+		bool L_11 = V_2;
+		return L_11;
 	}
 }
-// Method Definition Index: 86741
+// Method Definition Index: 86533
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleController_SingleTouchDrag_m464291E7F40A59E4DAC260D3117E6E737906722C (PuzzleController_t5FB47548353DBE183DA111B6B16C032777699839* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_worldPosition, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1039,13 +2693,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleController_SingleTouchDrag_m464291
 	memset((&V_0), 0, sizeof(V_0));
 	bool V_1 = false;
 	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:55>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:59>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_worldPosition;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = __this->___clickedPosition;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
 		L_2 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_0, L_1, NULL);
 		V_0 = L_2;
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:57>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:61>
 		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_3 = __this->___currentPiece;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_4;
@@ -1058,7 +2712,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleController_SingleTouchDrag_m464291
 		}
 	}
 	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:58>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:62>
 		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_6 = __this->___currentPiece;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7 = V_0;
 		NullCheck(L_6);
@@ -1067,153 +2721,391 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleController_SingleTouchDrag_m464291
 
 IL_002b:
 	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:59>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:63>
 		return;
 	}
 }
-// Method Definition Index: 86742
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* PuzzleController_GetClosestPiece_m98242F920BB6BCB9DB5B624D5D6EDEBB1DB8B6A8 (PuzzleController_t5FB47548353DBE183DA111B6B16C032777699839* __this, PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* ___0_puzzlePieces, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_worldPosition, const RuntimeMethod* method) 
+// Method Definition Index: 86534
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleController_SingleTouchEnded_mF0C3FD153E1B8C4C32CA6FC4597A17AF187CE8F4 (PuzzleController_t5FB47548353DBE183DA111B6B16C032777699839* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PuzzleController_GetClosestPiece_m98242F920BB6BCB9DB5B624D5D6EDEBB1DB8B6A8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PuzzleController_SingleTouchEnded_mF0C3FD153E1B8C4C32CA6FC4597A17AF187CE8F4_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	ProfilerMethodSentry _profilerMethodSentry(PuzzleController_GetClosestPiece_m98242F920BB6BCB9DB5B624D5D6EDEBB1DB8B6A8_RuntimeMethod_var);
+	ProfilerMethodSentry _profilerMethodSentry(PuzzleController_SingleTouchEnded_mF0C3FD153E1B8C4C32CA6FC4597A17AF187CE8F4_RuntimeMethod_var);
+	bool V_0 = false;
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:67>
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_0 = __this->___currentPiece;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		V_0 = L_1;
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:68>
+		goto IL_0026;
+	}
+
+IL_0013:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:70>
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_3 = __this->___currentPiece;
+		NullCheck(L_3);
+		PuzzlePiece_StopMoving_m2109DD1200C2B4F3F5FE821E364F9262A8A51E66(L_3, NULL);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:71>
+		__this->___currentPiece = (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentPiece), (void*)(PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA*)NULL);
+	}
+
+IL_0026:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:72>
+		return;
+	}
+}
+// Method Definition Index: 86535
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleController_ManagePiecesOrder_m2BA049CFF3E60761882CB76953893EA751D61102 (PuzzleController_t5FB47548353DBE183DA111B6B16C032777699839* __this, PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* ___0_pieces, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1__ctor_mF3D65C30ACED71826A2F8078A5D10F3CC827E420_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PuzzleController_ManagePiecesOrder_m2BA049CFF3E60761882CB76953893EA751D61102_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(PuzzleController_ManagePiecesOrder_m2BA049CFF3E60761882CB76953893EA751D61102_RuntimeMethod_var);
 	float V_0 = 0.0f;
-	int32_t V_1 = 0;
-	int32_t V_2 = 0;
-	float V_3 = 0.0f;
-	bool V_4 = false;
+	float V_1 = 0.0f;
+	Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	int32_t V_4 = 0;
 	bool V_5 = false;
 	bool V_6 = false;
 	bool V_7 = false;
-	PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* V_8 = NULL;
 	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:63>
-		V_0 = (50000.0f);
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:64>
-		V_1 = (-1);
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:66>
-		V_2 = 0;
-		goto IL_0048;
-	}
-
-IL_000d:
-	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:68>
-		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_0 = ___0_puzzlePieces;
-		int32_t L_1 = V_2;
-		NullCheck(L_0);
-		int32_t L_2 = L_1;
-		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_3 = (L_0)->GetAt(static_cast<il2cpp_array_size_t>(L_2));
-		NullCheck(L_3);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
-		L_4 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_3, NULL);
-		NullCheck(L_4);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
-		L_5 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_4, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___1_worldPosition;
-		float L_7;
-		L_7 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_5, L_6, NULL);
-		V_3 = L_7;
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:70>
-		float L_8 = V_3;
-		float L_9 = __this->___detectionRadius;
-		V_4 = (bool)((((float)L_8) > ((float)L_9))? 1 : 0);
-		bool L_10 = V_4;
-		if (!L_10)
-		{
-			goto IL_0033;
-		}
-	}
-	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:71>
-		goto IL_0044;
-	}
-
-IL_0033:
-	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:73>
-		float L_11 = V_3;
-		float L_12 = V_0;
-		V_5 = (bool)((((float)L_11) < ((float)L_12))? 1 : 0);
-		bool L_13 = V_5;
-		if (!L_13)
-		{
-			goto IL_0043;
-		}
-	}
-	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:75>
-		float L_14 = V_3;
-		V_0 = L_14;
 		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:76>
-		int32_t L_15 = V_2;
-		V_1 = L_15;
-	}
-
-IL_0043:
-	{
-	}
-
-IL_0044:
-	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:66>
-		int32_t L_16 = V_2;
-		V_2 = ((int32_t)il2cpp_codegen_add(L_16, 1));
-	}
-
-IL_0048:
-	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:66>
-		int32_t L_17 = V_2;
-		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_18 = ___0_puzzlePieces;
-		NullCheck(L_18);
-		V_6 = (bool)((((int32_t)L_17) < ((int32_t)((int32_t)(((RuntimeArray*)L_18)->max_length))))? 1 : 0);
-		bool L_19 = V_6;
-		if (L_19)
-		{
-			goto IL_000d;
-		}
-	}
-	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:80>
-		int32_t L_20 = V_1;
-		V_7 = (bool)((((int32_t)L_20) < ((int32_t)0))? 1 : 0);
-		bool L_21 = V_7;
-		if (!L_21)
-		{
-			goto IL_0063;
-		}
-	}
-	{
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_0 = ___0_pieces;
+		NullCheck(L_0);
+		V_0 = ((float)il2cpp_codegen_multiply(((float)((int32_t)(((RuntimeArray*)L_0)->max_length))), (0.100000001f)));
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:77>
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_1 = __this->___currentPiece;
+		NullCheck(L_1);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
+		L_2 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_1, NULL);
+		NullCheck(L_2);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
+		L_3 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_2, NULL);
+		float L_4 = L_3.___z;
+		V_1 = L_4;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:79>
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_5 = __this->___currentPiece;
+		NullCheck(L_5);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
+		L_6 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_5, NULL);
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_7 = __this->___currentPiece;
+		NullCheck(L_7);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8;
+		L_8 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_7, NULL);
+		NullCheck(L_8);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
+		L_9 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_8, NULL);
+		float L_10 = V_0;
+		Nullable_1__ctor_mF3D65C30ACED71826A2F8078A5D10F3CC827E420((&V_2), ((-L_10)), Nullable_1__ctor_mF3D65C30ACED71826A2F8078A5D10F3CC827E420_RuntimeMethod_var);
+		il2cpp_codegen_initobj((&V_3), sizeof(Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75));
+		Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 L_11 = V_3;
+		il2cpp_codegen_initobj((&V_3), sizeof(Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75));
+		Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 L_12 = V_3;
+		Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 L_13 = V_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
+		L_14 = VectorExtensions_With_m3B32D157928737360FDF7B5BAB3CA3B47BA8A7A2(L_9, L_11, L_12, L_13, NULL);
+		NullCheck(L_6);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_6, L_14, NULL);
 		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:81>
-		V_8 = (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA*)NULL;
-		goto IL_006a;
+		V_4 = 0;
+		goto IL_00cd;
 	}
 
-IL_0063:
+IL_0069:
 	{
 		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:83>
-		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_22 = ___0_puzzlePieces;
-		int32_t L_23 = V_1;
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_15 = ___0_pieces;
+		int32_t L_16 = V_4;
+		NullCheck(L_15);
+		int32_t L_17 = L_16;
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_18 = (L_15)->GetAt(static_cast<il2cpp_array_size_t>(L_17));
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_19 = __this->___currentPiece;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_20;
+		L_20 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_18, L_19, NULL);
+		V_5 = L_20;
+		bool L_21 = V_5;
+		if (!L_21)
+		{
+			goto IL_0081;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:84>
+		goto IL_00c7;
+	}
+
+IL_0081:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:86>
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_22 = ___0_pieces;
+		int32_t L_23 = V_4;
 		NullCheck(L_22);
 		int32_t L_24 = L_23;
 		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_25 = (L_22)->GetAt(static_cast<il2cpp_array_size_t>(L_24));
-		V_8 = L_25;
-		goto IL_006a;
+		NullCheck(L_25);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_26;
+		L_26 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_25, NULL);
+		NullCheck(L_26);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27;
+		L_27 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_26, NULL);
+		float L_28 = L_27.___z;
+		float L_29 = V_1;
+		V_6 = (bool)((((float)L_28) < ((float)L_29))? 1 : 0);
+		bool L_30 = V_6;
+		if (!L_30)
+		{
+			goto IL_00c6;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:87>
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_31 = ___0_pieces;
+		int32_t L_32 = V_4;
+		NullCheck(L_31);
+		int32_t L_33 = L_32;
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_34 = (L_31)->GetAt(static_cast<il2cpp_array_size_t>(L_33));
+		NullCheck(L_34);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_35;
+		L_35 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_34, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_36 = L_35;
+		NullCheck(L_36);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_37;
+		L_37 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_36, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38;
+		L_38 = Vector3_get_forward_mAA55A7034304DF8B2152EAD49AE779FC4CA2EB4A_inline(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_39;
+		L_39 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_38, (0.100000001f), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_40;
+		L_40 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_37, L_39, NULL);
+		NullCheck(L_36);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_36, L_40, NULL);
 	}
 
-IL_006a:
+IL_00c6:
 	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:84>
-		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_26 = V_8;
-		return L_26;
+	}
+
+IL_00c7:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:81>
+		int32_t L_41 = V_4;
+		V_4 = ((int32_t)il2cpp_codegen_add(L_41, 1));
+	}
+
+IL_00cd:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:81>
+		int32_t L_42 = V_4;
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_43 = ___0_pieces;
+		NullCheck(L_43);
+		V_7 = (bool)((((int32_t)L_42) < ((int32_t)((int32_t)(((RuntimeArray*)L_43)->max_length))))? 1 : 0);
+		bool L_44 = V_7;
+		if (L_44)
+		{
+			goto IL_0069;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:89>
+		return;
 	}
 }
-// Method Definition Index: 86743
+// Method Definition Index: 86536
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* PuzzleController_GetTopClosestPiece_m4AF0DB696DC3FA195BC74B7D6E3C452A9A04C6B7 (PuzzleController_t5FB47548353DBE183DA111B6B16C032777699839* __this, PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* ___0_puzzlePieces, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_worldPosition, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mC89B83BD54F15D87ADDB9E44902F580395C19126_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Sort_mC8AB81EB601D6B86A0E00A347F0A97F0074F7DB9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mB5FE4A7A8A2E83525B2255E6D6F8ABD5B4DF1140_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m3D12B15F2132AE2799B1DB82BF669A2A0C182F2C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m59EB93B979E6102D267EB8EA3F98741BE8D53734_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PuzzleController_GetTopClosestPiece_m4AF0DB696DC3FA195BC74B7D6E3C452A9A04C6B7_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(PuzzleController_GetTopClosestPiece_m4AF0DB696DC3FA195BC74B7D6E3C452A9A04C6B7_RuntimeMethod_var);
+	List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* V_0 = NULL;
+	int32_t V_1 = 0;
+	float V_2 = 0.0f;
+	bool V_3 = false;
+	bool V_4 = false;
+	bool V_5 = false;
+	bool V_6 = false;
+	PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* V_7 = NULL;
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:93>
+		List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* L_0 = (List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65*)il2cpp_codegen_object_new(List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65_il2cpp_TypeInfo_var);
+		List_1__ctor_mB5FE4A7A8A2E83525B2255E6D6F8ABD5B4DF1140(L_0, List_1__ctor_mB5FE4A7A8A2E83525B2255E6D6F8ABD5B4DF1140_RuntimeMethod_var);
+		V_0 = L_0;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:95>
+		V_1 = 0;
+		goto IL_0058;
+	}
+
+IL_000b:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:98>
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_1 = ___0_puzzlePieces;
+		int32_t L_2 = V_1;
+		NullCheck(L_1);
+		int32_t L_3 = L_2;
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_4 = (L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_3));
+		NullCheck(L_4);
+		bool L_5;
+		L_5 = PuzzlePiece_get_IsValid_m3CDF9B64F0CCC924E0E7629B307F1007222D8504_inline(L_4, NULL);
+		V_3 = L_5;
+		bool L_6 = V_3;
+		if (!L_6)
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:99>
+		goto IL_0054;
+	}
+
+IL_001a:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:101>
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_7 = ___0_puzzlePieces;
+		int32_t L_8 = V_1;
+		NullCheck(L_7);
+		int32_t L_9 = L_8;
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_10 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
+		NullCheck(L_10);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11;
+		L_11 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_10, NULL);
+		NullCheck(L_11);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
+		L_12 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_11, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_13;
+		L_13 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_12, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
+		L_14 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_13, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15 = ___1_worldPosition;
+		float L_16;
+		L_16 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_14, L_15, NULL);
+		V_2 = L_16;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:103>
+		float L_17 = V_2;
+		float L_18 = __this->___detectionRadius;
+		V_4 = (bool)((((float)L_17) > ((float)L_18))? 1 : 0);
+		bool L_19 = V_4;
+		if (!L_19)
+		{
+			goto IL_0049;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:104>
+		goto IL_0054;
+	}
+
+IL_0049:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:106>
+		List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* L_20 = V_0;
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_21 = ___0_puzzlePieces;
+		int32_t L_22 = V_1;
+		NullCheck(L_21);
+		int32_t L_23 = L_22;
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_24 = (L_21)->GetAt(static_cast<il2cpp_array_size_t>(L_23));
+		NullCheck(L_20);
+		List_1_Add_mC89B83BD54F15D87ADDB9E44902F580395C19126_inline(L_20, L_24, List_1_Add_mC89B83BD54F15D87ADDB9E44902F580395C19126_RuntimeMethod_var);
+	}
+
+IL_0054:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:95>
+		int32_t L_25 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_25, 1));
+	}
+
+IL_0058:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:95>
+		int32_t L_26 = V_1;
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_27 = ___0_puzzlePieces;
+		NullCheck(L_27);
+		V_5 = (bool)((((int32_t)L_26) < ((int32_t)((int32_t)(((RuntimeArray*)L_27)->max_length))))? 1 : 0);
+		bool L_28 = V_5;
+		if (L_28)
+		{
+			goto IL_000b;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:109>
+		List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* L_29 = V_0;
+		NullCheck(L_29);
+		int32_t L_30;
+		L_30 = List_1_get_Count_m3D12B15F2132AE2799B1DB82BF669A2A0C182F2C_inline(L_29, List_1_get_Count_m3D12B15F2132AE2799B1DB82BF669A2A0C182F2C_RuntimeMethod_var);
+		V_6 = (bool)((((int32_t)((((int32_t)L_30) > ((int32_t)0))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_31 = V_6;
+		if (!L_31)
+		{
+			goto IL_007b;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:110>
+		V_7 = (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA*)NULL;
+		goto IL_008d;
+	}
+
+IL_007b:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:112>
+		List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* L_32 = V_0;
+		NullCheck(L_32);
+		List_1_Sort_mC8AB81EB601D6B86A0E00A347F0A97F0074F7DB9(L_32, List_1_Sort_mC8AB81EB601D6B86A0E00A347F0A97F0074F7DB9_RuntimeMethod_var);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:114>
+		List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* L_33 = V_0;
+		NullCheck(L_33);
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_34;
+		L_34 = List_1_get_Item_m59EB93B979E6102D267EB8EA3F98741BE8D53734(L_33, 0, List_1_get_Item_m59EB93B979E6102D267EB8EA3F98741BE8D53734_RuntimeMethod_var);
+		V_7 = L_34;
+		goto IL_008d;
+	}
+
+IL_008d:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleController.cs:115>
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_35 = V_7;
+		return L_35;
+	}
+}
+// Method Definition Index: 86537
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleController__ctor_m70DCD23007B193227EF6A1F118D07E0085A43D11 (PuzzleController_t5FB47548353DBE183DA111B6B16C032777699839* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1236,7 +3128,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleController__ctor_m70DCD23007B19322
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 86744
+// Method Definition Index: 86538
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleGenerator_Start_mDB81F938305F0DBE3C96E3E519382FEB5CFD24AE (PuzzleGenerator_t11FA423B12F62389724203EDB502FA9974492E2C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1248,17 +3140,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleGenerator_Start_mDB81F938305F0DBE3
 	ProfilerMethodSentry _profilerMethodSentry(PuzzleGenerator_Start_mDB81F938305F0DBE3C96E3E519382FEB5CFD24AE_RuntimeMethod_var);
 	{
 		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:18>
-		PuzzleController_t5FB47548353DBE183DA111B6B16C032777699839* L_0 = __this->___puzzleController;
-		float L_1 = __this->___gridScale;
-		NullCheck(L_0);
-		PuzzleController_Configure_m17290C5C46D44BE66FAA59C8AEF721225AA8E2F2(L_0, __this, L_1, NULL);
+		int32_t L_0 = __this->___gridSize;
+		__this->___gridScale = ((float)((4.0f)/((float)L_0)));
 		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:20>
+		PuzzleController_t5FB47548353DBE183DA111B6B16C032777699839* L_1 = __this->___puzzleController;
+		float L_2 = __this->___gridScale;
+		NullCheck(L_1);
+		PuzzleController_Configure_m17290C5C46D44BE66FAA59C8AEF721225AA8E2F2(L_1, __this, L_2, NULL);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:22>
 		PuzzleGenerator_GenerateGrid_m549F149D318939ED2F5951DAA15EF6F91ED316A0(__this, NULL);
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:21>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:23>
 		return;
 	}
 }
-// Method Definition Index: 86745
+// Method Definition Index: 86539
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleGenerator_GenerateGrid_m549F149D318939ED2F5951DAA15EF6F91ED316A0 (PuzzleGenerator_t11FA423B12F62389724203EDB502FA9974492E2C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1278,19 +3173,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleGenerator_GenerateGrid_m549F149D31
 	int32_t V_2 = 0;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_3;
 	memset((&V_3), 0, sizeof(V_3));
-	PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* V_4 = NULL;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_5;
-	memset((&V_5), 0, sizeof(V_5));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* V_5 = NULL;
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_6;
 	memset((&V_6), 0, sizeof(V_6));
-	bool V_7 = false;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_7;
+	memset((&V_7), 0, sizeof(V_7));
 	bool V_8 = false;
+	bool V_9 = false;
 	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:25>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:27>
 		List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* L_0 = __this->___puzzlePieces;
 		NullCheck(L_0);
 		List_1_Clear_m3BE666F3578557354BE9C218B58FB994A6F76234_inline(L_0, List_1_Clear_m3BE666F3578557354BE9C218B58FB994A6F76234_RuntimeMethod_var);
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:27>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:29>
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_1;
 		L_1 = Vector2_get_left_m851D1A435131CE336F60115E19FC8C21480284BC_inline(NULL);
 		float L_2 = __this->___gridScale;
@@ -1312,33 +3209,33 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleGenerator_GenerateGrid_m549F149D31
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
 		L_12 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_11, NULL);
 		V_0 = L_12;
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:29>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:31>
 		float* L_13 = (float*)(&(&V_0)->___x);
 		float* L_14 = L_13;
 		float L_15 = *((float*)L_14);
 		float L_16 = __this->___gridScale;
 		*((float*)L_14) = (float)((float)il2cpp_codegen_add(L_15, ((float)(L_16/(2.0f)))));
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:30>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:32>
 		float* L_17 = (float*)(&(&V_0)->___y);
 		float* L_18 = L_17;
 		float L_19 = *((float*)L_18);
 		float L_20 = __this->___gridScale;
 		*((float*)L_18) = (float)((float)il2cpp_codegen_add(L_19, ((float)(L_20/(2.0f)))));
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:32>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:34>
 		V_1 = 0;
-		goto IL_0146;
+		goto IL_0180;
 	}
 
 IL_0091:
 	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:34>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:36>
 		V_2 = 0;
-		goto IL_012f;
+		goto IL_0169;
 	}
 
 IL_0099:
 	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:36>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:38>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21 = V_0;
 		int32_t L_22 = V_1;
 		int32_t L_23 = V_2;
@@ -1351,80 +3248,491 @@ IL_0099:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_27;
 		L_27 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_21, L_26, NULL);
 		V_3 = L_27;
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:37>
-		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_28 = __this->___puzzlePiecePrefab;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29 = V_3;
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_30;
-		L_30 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_31;
-		L_31 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_32;
-		L_32 = Object_Instantiate_TisPuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA_mDD84FA2E5D75C5A43ED7EC1D2420E598570B9A73(L_28, L_29, L_30, L_31, Object_Instantiate_TisPuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA_mDD84FA2E5D75C5A43ED7EC1D2420E598570B9A73_RuntimeMethod_var);
-		V_4 = L_32;
 		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:39>
-		List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* L_33 = __this->___puzzlePieces;
-		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_34 = V_4;
-		NullCheck(L_33);
-		List_1_Add_mC89B83BD54F15D87ADDB9E44902F580395C19126_inline(L_33, L_34, List_1_Add_mC89B83BD54F15D87ADDB9E44902F580395C19126_RuntimeMethod_var);
+		float* L_28 = (float*)(&(&V_3)->___z);
+		float* L_29 = L_28;
+		float L_30 = *((float*)L_29);
+		int32_t L_31 = V_1;
+		int32_t L_32 = V_2;
+		int32_t L_33;
+		L_33 = PuzzleGenerator_GridIndexFromPos_m35B16D699BFF93A8BC6BFCC69A3C71B45E8B5636(__this, L_31, L_32, NULL);
+		*((float*)L_29) = (float)((float)il2cpp_codegen_subtract(L_30, ((float)il2cpp_codegen_multiply((0.100000001f), ((float)L_33)))));
 		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:41>
-		int32_t L_35 = __this->___gridSize;
-		int32_t L_36 = __this->___gridSize;
-		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&V_5), ((float)((1.0f)/((float)L_35))), ((float)((1.0f)/((float)L_36))), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_34;
+		L_34 = Random_get_onUnitSphere_mA7FD531C3043945E5EA290F670E79A78EFAC0D92(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_35;
+		L_35 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_34, (2.0f), NULL);
+		V_4 = L_35;
 		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:42>
-		int32_t L_37 = V_1;
-		int32_t L_38 = __this->___gridSize;
-		int32_t L_39 = V_2;
-		int32_t L_40 = __this->___gridSize;
-		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&V_6), ((float)(((float)L_37)/((float)L_38))), ((float)(((float)L_39)/((float)L_40))), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_36 = V_3;
+		float L_37 = L_36.___z;
+		(&V_4)->___z = L_37;
 		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:44>
-		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_41 = V_4;
-		float L_42 = __this->___gridScale;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_43 = V_5;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_44 = V_6;
-		NullCheck(L_41);
-		PuzzlePiece_Configure_mF9B9CF3BD58105C023C7F37501C6A2A6F246D9B8(L_41, L_42, L_43, L_44, NULL);
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:34>
-		int32_t L_45 = V_2;
-		V_2 = ((int32_t)il2cpp_codegen_add(L_45, 1));
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_38 = __this->___puzzlePiecePrefab;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_39 = V_4;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_40;
+		L_40 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_41;
+		L_41 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_42;
+		L_42 = Object_Instantiate_TisPuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA_mDD84FA2E5D75C5A43ED7EC1D2420E598570B9A73(L_38, L_39, L_40, L_41, Object_Instantiate_TisPuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA_mDD84FA2E5D75C5A43ED7EC1D2420E598570B9A73_RuntimeMethod_var);
+		V_5 = L_42;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:46>
+		List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* L_43 = __this->___puzzlePieces;
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_44 = V_5;
+		NullCheck(L_43);
+		List_1_Add_mC89B83BD54F15D87ADDB9E44902F580395C19126_inline(L_43, L_44, List_1_Add_mC89B83BD54F15D87ADDB9E44902F580395C19126_RuntimeMethod_var);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:48>
+		int32_t L_45 = __this->___gridSize;
+		int32_t L_46 = __this->___gridSize;
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&V_6), ((float)((1.0f)/((float)L_45))), ((float)((1.0f)/((float)L_46))), NULL);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:49>
+		int32_t L_47 = V_1;
+		int32_t L_48 = __this->___gridSize;
+		int32_t L_49 = V_2;
+		int32_t L_50 = __this->___gridSize;
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&V_7), ((float)(((float)L_47)/((float)L_48))), ((float)(((float)L_49)/((float)L_50))), NULL);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:51>
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_51 = V_5;
+		float L_52 = __this->___gridScale;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_53 = V_6;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_54 = V_7;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_55 = V_3;
+		NullCheck(L_51);
+		PuzzlePiece_Configure_m27BC0BC65E57E5EDBBD7273C4E742A671DACD2F5(L_51, L_52, L_53, L_54, L_55, NULL);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:36>
+		int32_t L_56 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_56, 1));
 	}
 
-IL_012f:
+IL_0169:
 	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:34>
-		int32_t L_46 = V_2;
-		int32_t L_47 = __this->___gridSize;
-		V_7 = (bool)((((int32_t)L_46) < ((int32_t)L_47))? 1 : 0);
-		bool L_48 = V_7;
-		if (L_48)
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:36>
+		int32_t L_57 = V_2;
+		int32_t L_58 = __this->___gridSize;
+		V_8 = (bool)((((int32_t)L_57) < ((int32_t)L_58))? 1 : 0);
+		bool L_59 = V_8;
+		if (L_59)
 		{
 			goto IL_0099;
 		}
 	}
 	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:32>
-		int32_t L_49 = V_1;
-		V_1 = ((int32_t)il2cpp_codegen_add(L_49, 1));
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:34>
+		int32_t L_60 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_60, 1));
 	}
 
-IL_0146:
+IL_0180:
 	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:32>
-		int32_t L_50 = V_1;
-		int32_t L_51 = __this->___gridSize;
-		V_8 = (bool)((((int32_t)L_50) < ((int32_t)L_51))? 1 : 0);
-		bool L_52 = V_8;
-		if (L_52)
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:34>
+		int32_t L_61 = V_1;
+		int32_t L_62 = __this->___gridSize;
+		V_9 = (bool)((((int32_t)L_61) < ((int32_t)L_62))? 1 : 0);
+		bool L_63 = V_9;
+		if (L_63)
 		{
 			goto IL_0091;
 		}
 	}
 	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:47>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:55>
+		PuzzleGenerator_ConfigureNeighbors_mC8C706BB50C281D963D75682FE1385FBA60882ED(__this, NULL);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:56>
 		return;
 	}
 }
-// Method Definition Index: 86746
+// Method Definition Index: 86540
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleGenerator_ConfigureNeighbors_mC8C706BB50C281D963D75682FE1385FBA60882ED (PuzzleGenerator_t11FA423B12F62389724203EDB502FA9974492E2C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m3D12B15F2132AE2799B1DB82BF669A2A0C182F2C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m59EB93B979E6102D267EB8EA3F98741BE8D53734_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PuzzleGenerator_ConfigureNeighbors_mC8C706BB50C281D963D75682FE1385FBA60882ED_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(PuzzleGenerator_ConfigureNeighbors_mC8C706BB50C281D963D75682FE1385FBA60882ED_RuntimeMethod_var);
+	int32_t V_0 = 0;
+	bool V_1 = false;
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:60>
+		V_0 = 0;
+		goto IL_001d;
+	}
+
+IL_0005:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:61>
+		List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* L_0 = __this->___puzzlePieces;
+		int32_t L_1 = V_0;
+		NullCheck(L_0);
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_2;
+		L_2 = List_1_get_Item_m59EB93B979E6102D267EB8EA3F98741BE8D53734(L_0, L_1, List_1_get_Item_m59EB93B979E6102D267EB8EA3F98741BE8D53734_RuntimeMethod_var);
+		int32_t L_3 = V_0;
+		PuzzleGenerator_ConfigurePieceNeighbors_m47DF8F76D9B0A3F28C8FE1BEB05AC48A43E130F7(__this, L_2, L_3, NULL);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:60>
+		int32_t L_4 = V_0;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_4, 1));
+	}
+
+IL_001d:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:60>
+		int32_t L_5 = V_0;
+		List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* L_6 = __this->___puzzlePieces;
+		NullCheck(L_6);
+		int32_t L_7;
+		L_7 = List_1_get_Count_m3D12B15F2132AE2799B1DB82BF669A2A0C182F2C_inline(L_6, List_1_get_Count_m3D12B15F2132AE2799B1DB82BF669A2A0C182F2C_RuntimeMethod_var);
+		V_1 = (bool)((((int32_t)L_5) < ((int32_t)L_7))? 1 : 0);
+		bool L_8 = V_1;
+		if (L_8)
+		{
+			goto IL_0005;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:62>
+		return;
+	}
+}
+// Method Definition Index: 86541
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleGenerator_ConfigurePieceNeighbors_m47DF8F76D9B0A3F28C8FE1BEB05AC48A43E130F7 (PuzzleGenerator_t11FA423B12F62389724203EDB502FA9974492E2C* __this, PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* ___0_piece, int32_t ___1_index, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisPuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA_m16855B96D2A8C8DE8C8AEB5D0B17CE2921B8B928_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PuzzleGenerator_ConfigurePieceNeighbors_m47DF8F76D9B0A3F28C8FE1BEB05AC48A43E130F7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(PuzzleGenerator_ConfigurePieceNeighbors_m47DF8F76D9B0A3F28C8FE1BEB05AC48A43E130F7_RuntimeMethod_var);
+	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
+	PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* V_3 = NULL;
+	PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* V_4 = NULL;
+	PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* V_5 = NULL;
+	PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* V_6 = NULL;
+	PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* G_B3_0 = NULL;
+	PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* G_B6_0 = NULL;
+	PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* G_B9_0 = NULL;
+	PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* G_B12_0 = NULL;
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:66>
+		int32_t L_0 = ___1_index;
+		Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A L_1;
+		L_1 = PuzzleGenerator_IndexToGridPos_m718605045791541B3CE0B2CC7619AE6AEA2C268D(__this, L_0, NULL);
+		V_0 = L_1;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:67>
+		int32_t L_2;
+		L_2 = Vector2Int_get_x_mA2CACB1B6E6B5AD0CCC32B2CD2EDCE3ECEB50576_inline((&V_0), NULL);
+		V_1 = L_2;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:68>
+		int32_t L_3;
+		L_3 = Vector2Int_get_y_m48454163ECF0B463FB5A16A0C4FC4B14DB0768B3_inline((&V_0), NULL);
+		V_2 = L_3;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:70>
+		int32_t L_4 = V_1;
+		int32_t L_5 = V_2;
+		bool L_6;
+		L_6 = PuzzleGenerator_IsValidGridPos_m6C5E2E60661354A7696403819DDDB2457015710F(__this, ((int32_t)il2cpp_codegen_add(L_4, 1)), L_5, NULL);
+		if (L_6)
+		{
+			goto IL_0028;
+		}
+	}
+	{
+		G_B3_0 = ((PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA*)(NULL));
+		goto IL_0042;
+	}
+
+IL_0028:
+	{
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
+		L_7 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		int32_t L_8 = V_1;
+		int32_t L_9 = V_2;
+		int32_t L_10;
+		L_10 = PuzzleGenerator_GridIndexFromPos_m35B16D699BFF93A8BC6BFCC69A3C71B45E8B5636(__this, ((int32_t)il2cpp_codegen_add(L_8, 1)), L_9, NULL);
+		NullCheck(L_7);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11;
+		L_11 = Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF(L_7, L_10, NULL);
+		NullCheck(L_11);
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_12;
+		L_12 = Component_GetComponent_TisPuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA_m16855B96D2A8C8DE8C8AEB5D0B17CE2921B8B928(L_11, Component_GetComponent_TisPuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA_m16855B96D2A8C8DE8C8AEB5D0B17CE2921B8B928_RuntimeMethod_var);
+		G_B3_0 = L_12;
+	}
+
+IL_0042:
+	{
+		V_3 = G_B3_0;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:71>
+		int32_t L_13 = V_1;
+		int32_t L_14 = V_2;
+		bool L_15;
+		L_15 = PuzzleGenerator_IsValidGridPos_m6C5E2E60661354A7696403819DDDB2457015710F(__this, L_13, ((int32_t)il2cpp_codegen_subtract(L_14, 1)), NULL);
+		if (L_15)
+		{
+			goto IL_0052;
+		}
+	}
+	{
+		G_B6_0 = ((PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA*)(NULL));
+		goto IL_006c;
+	}
+
+IL_0052:
+	{
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_16;
+		L_16 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		int32_t L_17 = V_1;
+		int32_t L_18 = V_2;
+		int32_t L_19;
+		L_19 = PuzzleGenerator_GridIndexFromPos_m35B16D699BFF93A8BC6BFCC69A3C71B45E8B5636(__this, L_17, ((int32_t)il2cpp_codegen_subtract(L_18, 1)), NULL);
+		NullCheck(L_16);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_20;
+		L_20 = Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF(L_16, L_19, NULL);
+		NullCheck(L_20);
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_21;
+		L_21 = Component_GetComponent_TisPuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA_m16855B96D2A8C8DE8C8AEB5D0B17CE2921B8B928(L_20, Component_GetComponent_TisPuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA_m16855B96D2A8C8DE8C8AEB5D0B17CE2921B8B928_RuntimeMethod_var);
+		G_B6_0 = L_21;
+	}
+
+IL_006c:
+	{
+		V_4 = G_B6_0;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:72>
+		int32_t L_22 = V_1;
+		int32_t L_23 = V_2;
+		bool L_24;
+		L_24 = PuzzleGenerator_IsValidGridPos_m6C5E2E60661354A7696403819DDDB2457015710F(__this, ((int32_t)il2cpp_codegen_subtract(L_22, 1)), L_23, NULL);
+		if (L_24)
+		{
+			goto IL_007d;
+		}
+	}
+	{
+		G_B9_0 = ((PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA*)(NULL));
+		goto IL_0097;
+	}
+
+IL_007d:
+	{
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_25;
+		L_25 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		int32_t L_26 = V_1;
+		int32_t L_27 = V_2;
+		int32_t L_28;
+		L_28 = PuzzleGenerator_GridIndexFromPos_m35B16D699BFF93A8BC6BFCC69A3C71B45E8B5636(__this, ((int32_t)il2cpp_codegen_subtract(L_26, 1)), L_27, NULL);
+		NullCheck(L_25);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_29;
+		L_29 = Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF(L_25, L_28, NULL);
+		NullCheck(L_29);
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_30;
+		L_30 = Component_GetComponent_TisPuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA_m16855B96D2A8C8DE8C8AEB5D0B17CE2921B8B928(L_29, Component_GetComponent_TisPuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA_m16855B96D2A8C8DE8C8AEB5D0B17CE2921B8B928_RuntimeMethod_var);
+		G_B9_0 = L_30;
+	}
+
+IL_0097:
+	{
+		V_5 = G_B9_0;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:73>
+		int32_t L_31 = V_1;
+		int32_t L_32 = V_2;
+		bool L_33;
+		L_33 = PuzzleGenerator_IsValidGridPos_m6C5E2E60661354A7696403819DDDB2457015710F(__this, L_31, ((int32_t)il2cpp_codegen_add(L_32, 1)), NULL);
+		if (L_33)
+		{
+			goto IL_00a8;
+		}
+	}
+	{
+		G_B12_0 = ((PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA*)(NULL));
+		goto IL_00c2;
+	}
+
+IL_00a8:
+	{
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_34;
+		L_34 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		int32_t L_35 = V_1;
+		int32_t L_36 = V_2;
+		int32_t L_37;
+		L_37 = PuzzleGenerator_GridIndexFromPos_m35B16D699BFF93A8BC6BFCC69A3C71B45E8B5636(__this, L_35, ((int32_t)il2cpp_codegen_add(L_36, 1)), NULL);
+		NullCheck(L_34);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_38;
+		L_38 = Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF(L_34, L_37, NULL);
+		NullCheck(L_38);
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_39;
+		L_39 = Component_GetComponent_TisPuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA_m16855B96D2A8C8DE8C8AEB5D0B17CE2921B8B928(L_38, Component_GetComponent_TisPuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA_m16855B96D2A8C8DE8C8AEB5D0B17CE2921B8B928_RuntimeMethod_var);
+		G_B12_0 = L_39;
+	}
+
+IL_00c2:
+	{
+		V_6 = G_B12_0;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:75>
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_40 = ___0_piece;
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_41 = (PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89*)(PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89*)SZArrayNew(PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89_il2cpp_TypeInfo_var, (uint32_t)4);
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_42 = L_41;
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_43 = V_3;
+		NullCheck(L_42);
+		ArrayElementTypeCheck (L_42, L_43);
+		(L_42)->SetAt(static_cast<il2cpp_array_size_t>(0), (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA*)L_43);
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_44 = L_42;
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_45 = V_4;
+		NullCheck(L_44);
+		ArrayElementTypeCheck (L_44, L_45);
+		(L_44)->SetAt(static_cast<il2cpp_array_size_t>(1), (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA*)L_45);
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_46 = L_44;
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_47 = V_5;
+		NullCheck(L_46);
+		ArrayElementTypeCheck (L_46, L_47);
+		(L_46)->SetAt(static_cast<il2cpp_array_size_t>(2), (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA*)L_47);
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_48 = L_46;
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_49 = V_6;
+		NullCheck(L_48);
+		ArrayElementTypeCheck (L_48, L_49);
+		(L_48)->SetAt(static_cast<il2cpp_array_size_t>(3), (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA*)L_49);
+		NullCheck(L_40);
+		PuzzlePiece_SetNeighbors_m52C0162064C03CD335021CA63472173B89C45865(L_40, L_48, NULL);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:76>
+		return;
+	}
+}
+// Method Definition Index: 86542
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PuzzleGenerator_IsValidGridPos_m6C5E2E60661354A7696403819DDDB2457015710F (PuzzleGenerator_t11FA423B12F62389724203EDB502FA9974492E2C* __this, int32_t ___0_x, int32_t ___1_y, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PuzzleGenerator_IsValidGridPos_m6C5E2E60661354A7696403819DDDB2457015710F_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(PuzzleGenerator_IsValidGridPos_m6C5E2E60661354A7696403819DDDB2457015710F_RuntimeMethod_var);
+	bool V_0 = false;
+	int32_t G_B5_0 = 0;
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:80>
+		int32_t L_0 = ___0_x;
+		if ((((int32_t)L_0) < ((int32_t)0)))
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		int32_t L_1 = ___0_x;
+		int32_t L_2 = __this->___gridSize;
+		if ((((int32_t)L_1) >= ((int32_t)L_2)))
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		int32_t L_3 = ___1_y;
+		if ((((int32_t)L_3) < ((int32_t)0)))
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		int32_t L_4 = ___1_y;
+		int32_t L_5 = __this->___gridSize;
+		G_B5_0 = ((((int32_t)L_4) < ((int32_t)L_5))? 1 : 0);
+		goto IL_001e;
+	}
+
+IL_001d:
+	{
+		G_B5_0 = 0;
+	}
+
+IL_001e:
+	{
+		V_0 = (bool)G_B5_0;
+		goto IL_0021;
+	}
+
+IL_0021:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:81>
+		bool L_6 = V_0;
+		return L_6;
+	}
+}
+// Method Definition Index: 86543
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PuzzleGenerator_GridIndexFromPos_m35B16D699BFF93A8BC6BFCC69A3C71B45E8B5636 (PuzzleGenerator_t11FA423B12F62389724203EDB502FA9974492E2C* __this, int32_t ___0_x, int32_t ___1_y, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PuzzleGenerator_GridIndexFromPos_m35B16D699BFF93A8BC6BFCC69A3C71B45E8B5636_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(PuzzleGenerator_GridIndexFromPos_m35B16D699BFF93A8BC6BFCC69A3C71B45E8B5636_RuntimeMethod_var);
+	int32_t V_0 = 0;
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:85>
+		int32_t L_0 = ___1_y;
+		int32_t L_1 = __this->___gridSize;
+		int32_t L_2 = ___0_x;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_0, ((int32_t)il2cpp_codegen_multiply(L_1, L_2))));
+		goto IL_000e;
+	}
+
+IL_000e:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:86>
+		int32_t L_3 = V_0;
+		return L_3;
+	}
+}
+// Method Definition Index: 86544
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A PuzzleGenerator_IndexToGridPos_m718605045791541B3CE0B2CC7619AE6AEA2C268D (PuzzleGenerator_t11FA423B12F62389724203EDB502FA9974492E2C* __this, int32_t ___0_index, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PuzzleGenerator_IndexToGridPos_m718605045791541B3CE0B2CC7619AE6AEA2C268D_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(PuzzleGenerator_IndexToGridPos_m718605045791541B3CE0B2CC7619AE6AEA2C268D_RuntimeMethod_var);
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:90>
+		int32_t L_0 = ___0_index;
+		int32_t L_1 = __this->___gridSize;
+		V_0 = ((int32_t)(L_0/L_1));
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:91>
+		int32_t L_2 = ___0_index;
+		int32_t L_3 = __this->___gridSize;
+		V_1 = il2cpp_codegen_cast_double_to_int<int32_t>((fmodf(((float)L_2), ((float)L_3))));
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:93>
+		int32_t L_4 = V_0;
+		int32_t L_5 = V_1;
+		Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A L_6;
+		memset((&L_6), 0, sizeof(L_6));
+		Vector2Int__ctor_mC20D1312133EB8CB63EC11067088B043660F11CE_inline((&L_6), L_4, L_5, NULL);
+		V_2 = L_6;
+		goto IL_0020;
+	}
+
+IL_0020:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:94>
+		Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A L_7 = V_2;
+		return L_7;
+	}
+}
+// Method Definition Index: 86545
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* PuzzleGenerator_GetPuzzlePieces_mA22E55B0C0E795038D54055FD705E65D09395BED (PuzzleGenerator_t11FA423B12F62389724203EDB502FA9974492E2C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1437,7 +3745,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D
 	ProfilerMethodSentry _profilerMethodSentry(PuzzleGenerator_GetPuzzlePieces_mA22E55B0C0E795038D54055FD705E65D09395BED_RuntimeMethod_var);
 	PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* V_0 = NULL;
 	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:51>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:97>
 		List_1_t380E3E6A22442B7D489E5299DF69FD5FEA2F8F65* L_0 = __this->___puzzlePieces;
 		NullCheck(L_0);
 		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_1;
@@ -1448,12 +3756,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D
 
 IL_000f:
 	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:52>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzleGenerator.cs:98>
 		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_2 = V_0;
 		return L_2;
 	}
 }
-// Method Definition Index: 86747
+// Method Definition Index: 86546
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleGenerator__ctor_m6882BF3290C40B2E5207607D6192ED8F1AC4CCFB (PuzzleGenerator_t11FA423B12F62389724203EDB502FA9974492E2C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1483,18 +3791,51 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzleGenerator__ctor_m6882BF3290C40B2E5
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 86748
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzlePiece_Configure_mF9B9CF3BD58105C023C7F37501C6A2A6F246D9B8 (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* __this, float ___0_scale, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_tiling, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___2_offset, const RuntimeMethod* method) 
+// Method Definition Index: 86547
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PuzzlePiece_get_IsValid_m3CDF9B64F0CCC924E0E7629B307F1007222D8504 (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PuzzlePiece_Configure_mF9B9CF3BD58105C023C7F37501C6A2A6F246D9B8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PuzzlePiece_get_IsValid_m3CDF9B64F0CCC924E0E7629B307F1007222D8504_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	ProfilerMethodSentry _profilerMethodSentry(PuzzlePiece_Configure_mF9B9CF3BD58105C023C7F37501C6A2A6F246D9B8_RuntimeMethod_var);
+	ProfilerMethodSentry _profilerMethodSentry(PuzzlePiece_get_IsValid_m3CDF9B64F0CCC924E0E7629B307F1007222D8504_RuntimeMethod_var);
 	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:13>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:14>
+		bool L_0 = __this->___U3CIsValidU3Ek__BackingField;
+		return L_0;
+	}
+}
+// Method Definition Index: 86548
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzlePiece_set_IsValid_m789DECED94569E894C3AD3D2E4156BB5EE732351 (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* __this, bool ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PuzzlePiece_set_IsValid_m789DECED94569E894C3AD3D2E4156BB5EE732351_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(PuzzlePiece_set_IsValid_m789DECED94569E894C3AD3D2E4156BB5EE732351_RuntimeMethod_var);
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:14>
+		bool L_0 = ___0_value;
+		__this->___U3CIsValidU3Ek__BackingField = L_0;
+		return;
+	}
+}
+// Method Definition Index: 86549
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzlePiece_Configure_m27BC0BC65E57E5EDBBD7273C4E742A671DACD2F5 (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* __this, float ___0_scale, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_tiling, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___2_offset, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_correctPosition, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PuzzlePiece_Configure_m27BC0BC65E57E5EDBBD7273C4E742A671DACD2F5_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(PuzzlePiece_Configure_m27BC0BC65E57E5EDBBD7273C4E742A671DACD2F5_RuntimeMethod_var);
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:21>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
 		L_0 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
@@ -1504,7 +3845,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzlePiece_Configure_mF9B9CF3BD58105C02
 		L_3 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_1, L_2, NULL);
 		NullCheck(L_0);
 		Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633(L_0, L_3, NULL);
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:15>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:23>
 		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_4 = __this->___renderer;
 		NullCheck(L_4);
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_5;
@@ -1512,7 +3853,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzlePiece_Configure_mF9B9CF3BD58105C02
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_6 = ___1_tiling;
 		NullCheck(L_5);
 		Material_set_mainTextureScale_mABC2B4327CCDC6BB0E0EA72C6F29817400F56EF1(L_5, L_6, NULL);
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:16>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:24>
 		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_7 = __this->___renderer;
 		NullCheck(L_7);
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_8;
@@ -1520,11 +3861,33 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzlePiece_Configure_mF9B9CF3BD58105C02
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_9 = ___2_offset;
 		NullCheck(L_8);
 		Material_set_mainTextureOffset_m87C139F275814719F9A10709C34E2132DFEB7A12(L_8, L_9, NULL);
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:17>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:26>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___3_correctPosition;
+		__this->___correctPosition = L_10;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:27>
 		return;
 	}
 }
-// Method Definition Index: 86749
+// Method Definition Index: 86550
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzlePiece_SetNeighbors_m52C0162064C03CD335021CA63472173B89C45865 (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* __this, PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* ___0_puzzlePieces, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PuzzlePiece_SetNeighbors_m52C0162064C03CD335021CA63472173B89C45865_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(PuzzlePiece_SetNeighbors_m52C0162064C03CD335021CA63472173B89C45865_RuntimeMethod_var);
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:31>
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_0 = ___0_puzzlePieces;
+		__this->___neighbors = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___neighbors), (void*)L_0);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:32>
+		return;
+	}
+}
+// Method Definition Index: 86551
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzlePiece_StartMoving_m7064651EF46605DE5F3927320F9581BF325CE2B5 (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1535,18 +3898,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzlePiece_StartMoving_m7064651EF46605D
 	}
 	ProfilerMethodSentry _profilerMethodSentry(PuzzlePiece_StartMoving_m7064651EF46605DE5F3927320F9581BF325CE2B5_RuntimeMethod_var);
 	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:21>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:36>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
 		L_0 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		NullCheck(L_0);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
 		L_1 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_0, NULL);
 		__this->___startMovePos = L_1;
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:22>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:37>
 		return;
 	}
 }
-// Method Definition Index: 86750
+// Method Definition Index: 86552
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzlePiece_Move_mEE90EA75DA7D07561521B25A59368005009A54A7 (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_moveDelta, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1559,13 +3922,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzlePiece_Move_mEE90EA75DA7D07561521B2
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:26>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:41>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = __this->___startMovePos;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___0_moveDelta;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
 		L_2 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_0, L_1, NULL);
 		V_0 = L_2;
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:27>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:42>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
 		L_3 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
@@ -1580,11 +3943,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzlePiece_Move_mEE90EA75DA7D07561521B2
 		L_8 = Vector3_Lerp_m3A906D0530A94FAABB94F0F905E84D99BE85C3F8_inline(L_5, L_6, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_7, (60.0f))), (0.300000012f))), NULL);
 		NullCheck(L_3);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_3, L_8, NULL);
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:28>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:43>
 		return;
 	}
 }
-// Method Definition Index: 86751
+// Method Definition Index: 86553
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzlePiece_StopMoving_m2109DD1200C2B4F3F5FE821E364F9262A8A51E66 (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1594,12 +3957,352 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzlePiece_StopMoving_m2109DD1200C2B4F3
 		s_Il2CppMethodInitialized = true;
 	}
 	ProfilerMethodSentry _profilerMethodSentry(PuzzlePiece_StopMoving_m2109DD1200C2B4F3F5FE821E364F9262A8A51E66_RuntimeMethod_var);
+	bool V_0 = false;
+	bool V_1 = false;
 	{
-		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:33>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:47>
+		bool L_0;
+		L_0 = PuzzlePiece_CheckForValidation_m64677CF0B8B12F78A3A06AE6698DDD5038D8474F(__this, NULL);
+		V_0 = L_0;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:49>
+		bool L_1 = V_0;
+		V_1 = L_1;
+		bool L_2 = V_1;
+		if (!L_2)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:50>
+		goto IL_0016;
+	}
+
+IL_000f:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:52>
+		PuzzlePiece_CheckForNeighbors_mB1D58F78BCC76ED911DD69E8831D7F3173A0CBCF(__this, NULL);
+	}
+
+IL_0016:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:53>
 		return;
 	}
 }
-// Method Definition Index: 86752
+// Method Definition Index: 86554
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PuzzlePiece_CheckForValidation_m64677CF0B8B12F78A3A06AE6698DDD5038D8474F (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PuzzlePiece_CheckForValidation_m64677CF0B8B12F78A3A06AE6698DDD5038D8474F_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(PuzzlePiece_CheckForValidation_m64677CF0B8B12F78A3A06AE6698DDD5038D8474F_RuntimeMethod_var);
+	bool V_0 = false;
+	bool V_1 = false;
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:57>
+		bool L_0;
+		L_0 = PuzzlePiece_IsCloseToCorrectPosition_m51DF1F52E9B4E73184B68C85A8A00D309F8F660D(__this, NULL);
+		V_0 = L_0;
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:59>
+		PuzzlePiece_Validate_m3D3097B75B988CCA9DA4090230A5D73F452D0E5D(__this, NULL);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:60>
+		V_1 = (bool)1;
+		goto IL_001b;
+	}
+
+IL_0017:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:63>
+		V_1 = (bool)0;
+		goto IL_001b;
+	}
+
+IL_001b:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:64>
+		bool L_2 = V_1;
+		return L_2;
+	}
+}
+// Method Definition Index: 86555
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PuzzlePiece_IsCloseToCorrectPosition_m51DF1F52E9B4E73184B68C85A8A00D309F8F660D (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PuzzlePiece_IsCloseToCorrectPosition_m51DF1F52E9B4E73184B68C85A8A00D309F8F660D_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(PuzzlePiece_IsCloseToCorrectPosition_m51DF1F52E9B4E73184B68C85A8A00D309F8F660D_RuntimeMethod_var);
+	bool V_0 = false;
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:68>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
+		L_0 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_0);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
+		L_1 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_0, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_2;
+		L_2 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_1, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
+		L_3 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_2, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = __this->___correctPosition;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_5;
+		L_5 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_4, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
+		L_6 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_5, NULL);
+		float L_7;
+		L_7 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_3, L_6, NULL);
+		float L_8;
+		L_8 = PuzzlePiece_GetMinValidDistance_m8D7A34A08820DD4A48431C39481EFCEE1785F6A3(__this, NULL);
+		V_0 = (bool)((((float)L_7) < ((float)L_8))? 1 : 0);
+		goto IL_0036;
+	}
+
+IL_0036:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:69>
+		bool L_9 = V_0;
+		return L_9;
+	}
+}
+// Method Definition Index: 86556
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PuzzlePiece_GetMinValidDistance_m8D7A34A08820DD4A48431C39481EFCEE1785F6A3 (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PuzzlePiece_GetMinValidDistance_m8D7A34A08820DD4A48431C39481EFCEE1785F6A3_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(PuzzlePiece_GetMinValidDistance_m8D7A34A08820DD4A48431C39481EFCEE1785F6A3_RuntimeMethod_var);
+	float V_0 = 0.0f;
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:73>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
+		L_0 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_0);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
+		L_1 = Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F(L_0, NULL);
+		float L_2 = L_1.___x;
+		float L_3;
+		L_3 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline((0.0500000007f), ((float)(L_2/(5.0f))), NULL);
+		V_0 = L_3;
+		goto IL_0024;
+	}
+
+IL_0024:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:74>
+		float L_4 = V_0;
+		return L_4;
+	}
+}
+// Method Definition Index: 86557
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzlePiece_CheckForNeighbors_mB1D58F78BCC76ED911DD69E8831D7F3173A0CBCF (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PuzzlePiece_CheckForNeighbors_mB1D58F78BCC76ED911DD69E8831D7F3173A0CBCF_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(PuzzlePiece_CheckForNeighbors_mB1D58F78BCC76ED911DD69E8831D7F3173A0CBCF_RuntimeMethod_var);
+	int32_t V_0 = 0;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	bool V_2 = false;
+	bool V_3 = false;
+	bool V_4 = false;
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:78>
+		V_0 = 0;
+		goto IL_0066;
+	}
+
+IL_0005:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:80>
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_0 = __this->___neighbors;
+		int32_t L_1 = V_0;
+		NullCheck(L_0);
+		int32_t L_2 = L_1;
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_3 = (L_0)->GetAt(static_cast<il2cpp_array_size_t>(L_2));
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_4;
+		L_4 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		V_2 = L_4;
+		bool L_5 = V_2;
+		if (!L_5)
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:81>
+		goto IL_0062;
+	}
+
+IL_001a:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:82>
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_6 = __this->___neighbors;
+		int32_t L_7 = V_0;
+		NullCheck(L_6);
+		int32_t L_8 = L_7;
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_9 = (L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
+		NullCheck(L_9);
+		bool L_10;
+		L_10 = PuzzlePiece_get_IsValid_m3CDF9B64F0CCC924E0E7629B307F1007222D8504_inline(L_9, NULL);
+		V_3 = L_10;
+		bool L_11 = V_3;
+		if (!L_11)
+		{
+			goto IL_002d;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:83>
+		goto IL_0062;
+	}
+
+IL_002d:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:85>
+		int32_t L_12 = V_0;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_13;
+		L_13 = Quaternion_Euler_m9262AB29E3E9CE94EF71051F38A28E82AEC73F90_inline((0.0f), (0.0f), ((float)((int32_t)il2cpp_codegen_multiply(((int32_t)-90), L_12))), NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
+		L_14 = Vector3_get_right_mFF573AFBBB2186E7AFA1BA7CA271A78DF67E4EA0_inline(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15;
+		L_15 = Quaternion_op_Multiply_mE1EBA73F9173432B50F8F17CE8190C5A7986FB8C(L_13, L_14, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_16;
+		L_16 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_16);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17;
+		L_17 = Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F(L_16, NULL);
+		float L_18 = L_17.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
+		L_19 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_15, L_18, NULL);
+		V_1 = L_19;
+	}
+
+IL_0062:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:78>
+		int32_t L_20 = V_0;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_20, 1));
+	}
+
+IL_0066:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:78>
+		int32_t L_21 = V_0;
+		PuzzlePieceU5BU5D_t0A6043A9159D5CE042CCEE1B0D8FD00CF5310D89* L_22 = __this->___neighbors;
+		NullCheck(L_22);
+		V_4 = (bool)((((int32_t)L_21) < ((int32_t)((int32_t)(((RuntimeArray*)L_22)->max_length))))? 1 : 0);
+		bool L_23 = V_4;
+		if (L_23)
+		{
+			goto IL_0005;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:87>
+		return;
+	}
+}
+// Method Definition Index: 86558
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzlePiece_Validate_m3D3097B75B988CCA9DA4090230A5D73F452D0E5D (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PuzzlePiece_Validate_m3D3097B75B988CCA9DA4090230A5D73F452D0E5D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB49E09910B8638E656812E9AE6E6999EC407709A);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(PuzzlePiece_Validate_m3D3097B75B988CCA9DA4090230A5D73F452D0E5D_RuntimeMethod_var);
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:91>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_0 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->___correctPosition);
+		L_0->___z = (0.0f);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:92>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
+		L_1 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = __this->___correctPosition;
+		NullCheck(L_1);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_1, L_2, NULL);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:94>
+		PuzzlePiece_set_IsValid_m789DECED94569E894C3AD3D2E4156BB5EE732351_inline(__this, (bool)1, NULL);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:96>
+		String_t* L_3;
+		L_3 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(__this, NULL);
+		String_t* L_4;
+		L_4 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralB49E09910B8638E656812E9AE6E6999EC407709A, L_3, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_4, NULL);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:97>
+		return;
+	}
+}
+// Method Definition Index: 86559
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PuzzlePiece_CompareTo_mFA06409D09FB045089126F9D1889A80A87D55F0C (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* __this, PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* ___0_otherPiece, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PuzzlePiece_CompareTo_mFA06409D09FB045089126F9D1889A80A87D55F0C_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(PuzzlePiece_CompareTo_mFA06409D09FB045089126F9D1889A80A87D55F0C_RuntimeMethod_var);
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	int32_t V_1 = 0;
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:101>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
+		L_0 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_0);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
+		L_1 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_0, NULL);
+		V_0 = L_1;
+		float* L_2 = (float*)(&(&V_0)->___z);
+		PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* L_3 = ___0_otherPiece;
+		NullCheck(L_3);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
+		L_4 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_3, NULL);
+		NullCheck(L_4);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
+		L_5 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_4, NULL);
+		float L_6 = L_5.___z;
+		int32_t L_7;
+		L_7 = Single_CompareTo_m06F7868162EB392D3E99103D1A0BD27463C9E66F(L_2, L_6, NULL);
+		V_1 = L_7;
+		goto IL_002c;
+	}
+
+IL_002c:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:102>
+		int32_t L_8 = V_1;
+		return L_8;
+	}
+}
+// Method Definition Index: 86560
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzlePiece__ctor_mE84B04E008D513EBFA5936C4640E9560107E751C (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1622,7 +4325,505 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PuzzlePiece__ctor_mE84B04E008D513EBFA593
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 86753
+// Method Definition Index: 86561
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 VectorExtensions_With_m3B32D157928737360FDF7B5BAB3CA3B47BA8A7A2 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_v, Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 ___1_x, Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 ___2_y, Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 ___3_z, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_get_HasValue_mC149B1C717AF506BBE8932F2C1DC86C378D17EA8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1_get_Value_mE3B978271FFA8D9DEE17BFB34320A3C67BE148EA_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VectorExtensions_With_m3B32D157928737360FDF7B5BAB3CA3B47BA8A7A2_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(VectorExtensions_With_m3B32D157928737360FDF7B5BAB3CA3B47BA8A7A2_RuntimeMethod_var);
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* G_B2_0 = NULL;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* G_B1_0 = NULL;
+	float G_B3_0 = 0.0f;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* G_B3_1 = NULL;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* G_B5_0 = NULL;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* G_B4_0 = NULL;
+	float G_B6_0 = 0.0f;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* G_B6_1 = NULL;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* G_B8_0 = NULL;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* G_B7_0 = NULL;
+	float G_B9_0 = 0.0f;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* G_B9_1 = NULL;
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/VectorExtensions.cs:9>
+		bool L_0;
+		L_0 = Nullable_1_get_HasValue_mC149B1C717AF506BBE8932F2C1DC86C378D17EA8_inline((&___1_x), Nullable_1_get_HasValue_mC149B1C717AF506BBE8932F2C1DC86C378D17EA8_RuntimeMethod_var);
+		if (L_0)
+		{
+			G_B2_0 = (&___0_v);
+			goto IL_0014;
+		}
+		G_B1_0 = (&___0_v);
+	}
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___0_v;
+		float L_2 = L_1.___x;
+		G_B3_0 = L_2;
+		G_B3_1 = G_B1_0;
+		goto IL_001c;
+	}
+
+IL_0014:
+	{
+		float L_3;
+		L_3 = Nullable_1_get_Value_mE3B978271FFA8D9DEE17BFB34320A3C67BE148EA((&___1_x), Nullable_1_get_Value_mE3B978271FFA8D9DEE17BFB34320A3C67BE148EA_RuntimeMethod_var);
+		G_B3_0 = ((float)L_3);
+		G_B3_1 = G_B2_0;
+	}
+
+IL_001c:
+	{
+		G_B3_1->___x = G_B3_0;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/VectorExtensions.cs:10>
+		bool L_4;
+		L_4 = Nullable_1_get_HasValue_mC149B1C717AF506BBE8932F2C1DC86C378D17EA8_inline((&___2_y), Nullable_1_get_HasValue_mC149B1C717AF506BBE8932F2C1DC86C378D17EA8_RuntimeMethod_var);
+		if (L_4)
+		{
+			G_B5_0 = (&___0_v);
+			goto IL_0034;
+		}
+		G_B4_0 = (&___0_v);
+	}
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5 = ___0_v;
+		float L_6 = L_5.___y;
+		G_B6_0 = L_6;
+		G_B6_1 = G_B4_0;
+		goto IL_003c;
+	}
+
+IL_0034:
+	{
+		float L_7;
+		L_7 = Nullable_1_get_Value_mE3B978271FFA8D9DEE17BFB34320A3C67BE148EA((&___2_y), Nullable_1_get_Value_mE3B978271FFA8D9DEE17BFB34320A3C67BE148EA_RuntimeMethod_var);
+		G_B6_0 = ((float)L_7);
+		G_B6_1 = G_B5_0;
+	}
+
+IL_003c:
+	{
+		G_B6_1->___y = G_B6_0;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/VectorExtensions.cs:11>
+		bool L_8;
+		L_8 = Nullable_1_get_HasValue_mC149B1C717AF506BBE8932F2C1DC86C378D17EA8_inline((&___3_z), Nullable_1_get_HasValue_mC149B1C717AF506BBE8932F2C1DC86C378D17EA8_RuntimeMethod_var);
+		if (L_8)
+		{
+			G_B8_0 = (&___0_v);
+			goto IL_0054;
+		}
+		G_B7_0 = (&___0_v);
+	}
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = ___0_v;
+		float L_10 = L_9.___z;
+		G_B9_0 = L_10;
+		G_B9_1 = G_B7_0;
+		goto IL_005c;
+	}
+
+IL_0054:
+	{
+		float L_11;
+		L_11 = Nullable_1_get_Value_mE3B978271FFA8D9DEE17BFB34320A3C67BE148EA((&___3_z), Nullable_1_get_Value_mE3B978271FFA8D9DEE17BFB34320A3C67BE148EA_RuntimeMethod_var);
+		G_B9_0 = ((float)L_11);
+		G_B9_1 = G_B8_0;
+	}
+
+IL_005c:
+	{
+		G_B9_1->___z = G_B9_0;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/VectorExtensions.cs:13>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = ___0_v;
+		V_0 = L_12;
+		goto IL_0065;
+	}
+
+IL_0065:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/VectorExtensions.cs:14>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = V_0;
+		return L_13;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 86562
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformExtensions_Clear_m5D7C90E32B3AB86E4852B78EC83136AEAEF6506F (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_transform, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TransformExtensions_Clear_m5D7C90E32B3AB86E4852B78EC83136AEAEF6506F_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(TransformExtensions_Clear_m5D7C90E32B3AB86E4852B78EC83136AEAEF6506F_RuntimeMethod_var);
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* V_0 = NULL;
+	bool V_1 = false;
+	{
+		goto IL_0026;
+	}
+
+IL_0003:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Extensions/TransformExtensions.cs:15>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = ___0_transform;
+		NullCheck(L_0);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
+		L_1 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_0, NULL);
+		NullCheck(L_1);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
+		L_2 = Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF(L_1, 0, NULL);
+		V_0 = L_2;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Extensions/TransformExtensions.cs:16>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3 = V_0;
+		NullCheck(L_3);
+		Transform_SetParent_m6677538B60246D958DD91F931C50F969CCBB5250(L_3, (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*)NULL, NULL);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Extensions/TransformExtensions.cs:17>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4 = V_0;
+		NullCheck(L_4);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5;
+		L_5 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_4, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_5, NULL);
+	}
+
+IL_0026:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Extensions/TransformExtensions.cs:13>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6 = ___0_transform;
+		NullCheck(L_6);
+		int32_t L_7;
+		L_7 = Transform_get_childCount_mE9C29C702AB662CC540CA053EDE48BDAFA35B4B0(L_6, NULL);
+		V_1 = (bool)((((int32_t)L_7) > ((int32_t)0))? 1 : 0);
+		bool L_8 = V_1;
+		if (L_8)
+		{
+			goto IL_0003;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Extensions/TransformExtensions.cs:19>
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 86563
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ImageUtilities_GetAndroidDCIMPath_mAF750011373C8E8A2C89E47562D0C313F040BCAD (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_CallStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m398EA96C1DE1BB885F2B1DD0E00E8BBA86B49E63_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_Call_TisString_t_m67FC2931E81004C3F259008314180511C3D2AF40_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_GetStatic_TisString_t_mF408A1C0C6E5BF8154F00A450A97A51B2ABFCBDE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ImageUtilities_GetAndroidDCIMPath_mAF750011373C8E8A2C89E47562D0C313F040BCAD_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral46B913D7DFB659080ADF8DB6AAA4C762708B6DB7);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral494FC693F0F8537430451B5700E8D880D301CD60);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral84747C3F7D608CB12436E5B299537E4126DF191F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDDA9220385ADA0F9F6B63D1E01BCBC40BBBE8341);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(ImageUtilities_GetAndroidDCIMPath_mAF750011373C8E8A2C89E47562D0C313F040BCAD_RuntimeMethod_var);
+	AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* V_0 = NULL;
+	String_t* V_1 = NULL;
+	bool V_2 = false;
+	String_t* V_3 = NULL;
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Utilities/ImageUtilities.cs:13>
+		il2cpp_codegen_runtime_class_init_inline(Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
+		int32_t L_0;
+		L_0 = Application_get_platform_m59EF7D6155D18891B24767F83F388160B1FF2138(NULL);
+		V_2 = (bool)((((int32_t)((((int32_t)L_0) == ((int32_t)((int32_t)11)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_1 = V_2;
+		if (!L_1)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Utilities/ImageUtilities.cs:14>
+		il2cpp_codegen_runtime_class_init_inline(Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
+		String_t* L_2;
+		L_2 = Application_get_persistentDataPath_mC58BD3E1A20732E0A536491DBCAE6505B1624399(NULL);
+		V_3 = L_2;
+		goto IL_0057;
+	}
+
+IL_0019:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Utilities/ImageUtilities.cs:16>
+		AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* L_3 = (AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03*)il2cpp_codegen_object_new(AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03_il2cpp_TypeInfo_var);
+		AndroidJavaClass__ctor_mB5466169E1151B8CC44C8FED234D79984B431389(L_3, _stringLiteral494FC693F0F8537430451B5700E8D880D301CD60, NULL);
+		V_0 = L_3;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Utilities/ImageUtilities.cs:17>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Utilities/ImageUtilities.cs:18>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Utilities/ImageUtilities.cs:19>
+		AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* L_4 = V_0;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_5 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)1);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_6 = L_5;
+		AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* L_7 = V_0;
+		NullCheck(L_7);
+		String_t* L_8;
+		L_8 = AndroidJavaObject_GetStatic_TisString_t_mF408A1C0C6E5BF8154F00A450A97A51B2ABFCBDE(L_7, _stringLiteralDDA9220385ADA0F9F6B63D1E01BCBC40BBBE8341, AndroidJavaObject_GetStatic_TisString_t_mF408A1C0C6E5BF8154F00A450A97A51B2ABFCBDE_RuntimeMethod_var);
+		NullCheck(L_6);
+		ArrayElementTypeCheck (L_6, L_8);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_8);
+		NullCheck(L_4);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_9;
+		L_9 = AndroidJavaObject_CallStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m398EA96C1DE1BB885F2B1DD0E00E8BBA86B49E63(L_4, _stringLiteral84747C3F7D608CB12436E5B299537E4126DF191F, L_6, AndroidJavaObject_CallStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_m398EA96C1DE1BB885F2B1DD0E00E8BBA86B49E63_RuntimeMethod_var);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_10;
+		L_10 = Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline(Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		NullCheck(L_9);
+		String_t* L_11;
+		L_11 = AndroidJavaObject_Call_TisString_t_m67FC2931E81004C3F259008314180511C3D2AF40(L_9, _stringLiteral46B913D7DFB659080ADF8DB6AAA4C762708B6DB7, L_10, AndroidJavaObject_Call_TisString_t_m67FC2931E81004C3F259008314180511C3D2AF40_RuntimeMethod_var);
+		V_1 = L_11;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Utilities/ImageUtilities.cs:20>
+		String_t* L_12 = V_1;
+		V_3 = L_12;
+		goto IL_0057;
+	}
+
+IL_0057:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Utilities/ImageUtilities.cs:21>
+		String_t* L_13 = V_3;
+		return L_13;
+	}
+}
+// Method Definition Index: 86564
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ImageUtilities_GetTextureAtPath_m0623A8ED186CB0F5B1D8C193A3904A765F34B4D3 (String_t* ___0_path, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ImageUtilities_GetTextureAtPath_m0623A8ED186CB0F5B1D8C193A3904A765F34B4D3_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(ImageUtilities_GetTextureAtPath_m0623A8ED186CB0F5B1D8C193A3904A765F34B4D3_RuntimeMethod_var);
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_0 = NULL;
+	Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* V_1 = NULL;
+	bool V_2 = false;
+	Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* V_3 = NULL;
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Utilities/ImageUtilities.cs:30>
+		String_t* L_0 = ___0_path;
+		bool L_1;
+		L_1 = File_Exists_m95E329ABBE3EAD6750FE1989BBA6884457136D4A(L_0, NULL);
+		V_2 = (bool)((((int32_t)L_1) == ((int32_t)0))? 1 : 0);
+		bool L_2 = V_2;
+		if (!L_2)
+		{
+			goto IL_0012;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Utilities/ImageUtilities.cs:31>
+		V_3 = (Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4*)NULL;
+		goto IL_002f;
+	}
+
+IL_0012:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Utilities/ImageUtilities.cs:33>
+		String_t* L_3 = ___0_path;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4;
+		L_4 = File_ReadAllBytes_m704CBBA3F130C94F5A3E0BE2A93D9E9D79DC3E24(L_3, NULL);
+		V_0 = L_4;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Utilities/ImageUtilities.cs:35>
+		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_5 = (Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4*)il2cpp_codegen_object_new(Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4_il2cpp_TypeInfo_var);
+		Texture2D__ctor_mECF60A9EC0638EC353C02C8E99B6B465D23BE917(L_5, 1, 1, 5, (bool)0, NULL);
+		V_1 = L_5;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Utilities/ImageUtilities.cs:36>
+		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_6 = V_1;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_7 = V_0;
+		bool L_8;
+		L_8 = ImageConversion_LoadImage_m1797365F78319B68638DE8BB02836F8D60760041(L_6, L_7, NULL);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Utilities/ImageUtilities.cs:38>
+		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_9 = V_1;
+		V_3 = L_9;
+		goto IL_002f;
+	}
+
+IL_002f:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Utilities/ImageUtilities.cs:39>
+		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_10 = V_3;
+		return L_10;
+	}
+}
+// Method Definition Index: 86565
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ImageUtilities_SaveTextureToPath_m4C22015072109144C33BCD4112D4BDC7ADC6833C (Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___0_texture, String_t* ___1_path, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ImageUtilities_SaveTextureToPath_m4C22015072109144C33BCD4112D4BDC7ADC6833C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4AE51AB2DFAA44F596AB86F7CA5E50049766B896);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(ImageUtilities_SaveTextureToPath_m4C22015072109144C33BCD4112D4BDC7ADC6833C_RuntimeMethod_var);
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_0 = NULL;
+	Exception_t* V_1 = NULL;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Utilities/ImageUtilities.cs:49>
+		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_0 = ___0_texture;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1;
+		L_1 = ImageConversion_EncodeToPNG_m0804AD31B83C653AEBB234F6CC31A02D4FA7C945(L_0, NULL);
+		V_0 = L_1;
+	}
+	try
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Utilities/ImageUtilities.cs:54>
+		String_t* L_2 = ___1_path;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = V_0;
+		File_WriteAllBytes_mC491031DA14AA9B591F62D6AD0181D090E081077(L_2, L_3, NULL);
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Utilities/ImageUtilities.cs:55>
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral4AE51AB2DFAA44F596AB86F7CA5E50049766B896, NULL);
+		goto IL_003a;
+	}
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_001f;
+		}
+		throw e;
+	}
+
+CATCH_001f:
+	{
+		Exception_t* L_4 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Utilities/ImageUtilities.cs:57>
+		V_1 = L_4;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Utilities/ImageUtilities.cs:59>
+		Exception_t* L_5 = V_1;
+		NullCheck(L_5);
+		String_t* L_6;
+		L_6 = VirtualFuncInvoker0< String_t* >::Invoke(5, L_5);
+		String_t* L_7;
+		L_7 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralDC287FCAC436B15DC550128AB4CCB9810A9EFCED)), L_6, NULL);
+		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var)));
+		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(L_7, NULL);
+		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
+		goto IL_003a;
+	}
+
+IL_003a:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Utilities/ImageUtilities.cs:61>
+		return;
+	}
+}
+// Method Definition Index: 86566
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ImageUtilities_SpriteFromTexture_m79A2CEB2DD2355FB965616452874B3594E888E68 (Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___0_tex, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ImageUtilities_SpriteFromTexture_m79A2CEB2DD2355FB965616452874B3594E888E68_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ProfilerMethodSentry _profilerMethodSentry(ImageUtilities_SpriteFromTexture_m79A2CEB2DD2355FB965616452874B3594E888E68_RuntimeMethod_var);
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* V_0 = NULL;
+	bool V_1 = false;
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* V_2 = NULL;
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Utilities/ImageUtilities.cs:70>
+		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_0 = ___0_tex;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		V_1 = L_1;
+		bool L_2 = V_1;
+		if (!L_2)
+		{
+			goto IL_0010;
+		}
+	}
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Utilities/ImageUtilities.cs:71>
+		V_2 = (Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99*)NULL;
+		goto IL_004c;
+	}
+
+IL_0010:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Utilities/ImageUtilities.cs:73>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Utilities/ImageUtilities.cs:74>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Utilities/ImageUtilities.cs:75>
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Utilities/ImageUtilities.cs:76>
+		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_3 = ___0_tex;
+		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_4 = ___0_tex;
+		NullCheck(L_4);
+		int32_t L_5;
+		L_5 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_4);
+		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_6 = ___0_tex;
+		NullCheck(L_6);
+		int32_t L_7;
+		L_7 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_6);
+		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_8;
+		memset((&L_8), 0, sizeof(L_8));
+		Rect__ctor_m18C3033D135097BEE424AAA68D91C706D2647F23_inline((&L_8), (0.0f), (0.0f), ((float)L_5), ((float)L_7), NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_9;
+		L_9 = Vector2_get_one_m9097EB8DC23C26118A591AF16702796C3EF51DFB_inline(NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_10;
+		L_10 = Vector2_op_Division_m57A2DCD71E0CE7420851D705D1951F9238902AAB_inline(L_9, (2.0f), NULL);
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_11;
+		L_11 = Sprite_Create_m95F90AD74982187C087F4FA00947045A033D0BA1(L_3, L_8, L_10, (100.0f), NULL);
+		V_0 = L_11;
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Utilities/ImageUtilities.cs:78>
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_12 = V_0;
+		V_2 = L_12;
+		goto IL_004c;
+	}
+
+IL_004c:
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Tabsil/Scripts/Utilities/ImageUtilities.cs:79>
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_13 = V_2;
+		return L_13;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 86567
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (Readme_tE17B99201D0F52BD5727638AD3F41072A65B3BBB* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1645,7 +4846,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Readme__ctor_m69C325C4C171DCB0312B646A90
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 86754
+// Method Definition Index: 86568
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1668,15 +4869,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Section__ctor_m5F732533E4DFC0167D965E5F5
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 86755
+// Method Definition Index: 86569
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____78ABB739E0CD4DF8B644375CD806C46DBBE8D0A036CF16C60254F5BAA021D367_FieldInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____A8F78C4DAAE2028608F179AF95D6E13E87C036D947A4B628954A5E1B2F5E040A_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____6D2880E8D38CE0B492BDB87D6DBBF10BF5F8FFDB3DCAFBC169BCE268DC670EA0_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____9952C414DE3285BF615E77005969C14A3EE65E61903965070131DABF12D8C103_FieldInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -1687,33 +4888,33 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC
 	memset((&V_1), 0, sizeof(V_1));
 	{
 		il2cpp_codegen_initobj((&V_0), sizeof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E));
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)200));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)490));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = L_0;
-		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____A8F78C4DAAE2028608F179AF95D6E13E87C036D947A4B628954A5E1B2F5E040A_FieldInfo_var) };
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____9952C414DE3285BF615E77005969C14A3EE65E61903965070131DABF12D8C103_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_1, L_2, NULL);
 		(&V_0)->___FilePathsData = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___FilePathsData), (void*)L_1);
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)109));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)238));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = L_3;
-		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____78ABB739E0CD4DF8B644375CD806C46DBBE8D0A036CF16C60254F5BAA021D367_FieldInfo_var) };
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____6D2880E8D38CE0B492BDB87D6DBBF10BF5F8FFDB3DCAFBC169BCE268DC670EA0_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_4, L_5, NULL);
 		(&V_0)->___TypesData = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___TypesData), (void*)L_4);
-		(&V_0)->___TotalFiles = 5;
-		(&V_0)->___TotalTypes = 6;
+		(&V_0)->___TotalFiles = ((int32_t)11);
+		(&V_0)->___TotalTypes = ((int32_t)12);
 		(&V_0)->___IsEditorOnly = (bool)0;
 		MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E L_6 = V_0;
 		V_1 = L_6;
-		goto IL_005a;
+		goto IL_005f;
 	}
 
-IL_005a:
+IL_005f:
 	{
 		MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E L_7 = V_1;
 		return L_7;
 	}
 }
-// Method Definition Index: 86756
+// Method Definition Index: 86570
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tC95F24D0C6E6B77389433852BB389F39C692926E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1825,25 +5026,7 @@ IL2CPP_EXTERN_C void MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_ma
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 45785
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_v, const RuntimeMethod* method) 
-{
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	{
-		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ___0_v;
-		float L_1 = L_0.___x;
-		(&V_0)->___x = L_1;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_2 = ___0_v;
-		float L_3 = L_2.___y;
-		(&V_0)->___y = L_3;
-		(&V_0)->___z = (0.0f);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = V_0;
-		return L_4;
-	}
-}
-// Method Definition Index: 45640
+// Method Definition Index: 45644
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -1869,7 +5052,114 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_12;
 	}
 }
-// Method Definition Index: 45623
+// Method Definition Index: 45637
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_forward_mAA55A7034304DF8B2152EAD49AE779FC4CA2EB4A_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var))->___forwardVector;
+		return L_0;
+	}
+}
+// Method Definition Index: 45646
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_a;
+		float L_1 = L_0.___x;
+		float L_2 = ___1_d;
+		(&V_0)->___x = ((float)il2cpp_codegen_multiply(L_1, L_2));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___0_a;
+		float L_4 = L_3.___y;
+		float L_5 = ___1_d;
+		(&V_0)->___y = ((float)il2cpp_codegen_multiply(L_4, L_5));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___0_a;
+		float L_7 = L_6.___z;
+		float L_8 = ___1_d;
+		(&V_0)->___z = ((float)il2cpp_codegen_multiply(L_7, L_8));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = V_0;
+		return L_9;
+	}
+}
+// Method Definition Index: 45643
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_a;
+		float L_1 = L_0.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___1_b;
+		float L_3 = L_2.___x;
+		(&V_0)->___x = ((float)il2cpp_codegen_add(L_1, L_3));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___0_a;
+		float L_5 = L_4.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___1_b;
+		float L_7 = L_6.___y;
+		(&V_0)->___y = ((float)il2cpp_codegen_add(L_5, L_7));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___0_a;
+		float L_9 = L_8.___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___1_b;
+		float L_11 = L_10.___z;
+		(&V_0)->___z = ((float)il2cpp_codegen_add(L_9, L_11));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = V_0;
+		return L_12;
+	}
+}
+// Method Definition Index: 86547
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool PuzzlePiece_get_IsValid_m3CDF9B64F0CCC924E0E7629B307F1007222D8504_inline (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:14>
+		bool L_0 = __this->___U3CIsValidU3Ek__BackingField;
+		return L_0;
+	}
+}
+// Method Definition Index: 45788
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_v, const RuntimeMethod* method) 
+{
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_v;
+		float L_1 = L_0.___x;
+		(&V_0)->___x = L_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___0_v;
+		float L_3 = L_2.___y;
+		(&V_0)->___y = L_3;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_4 = V_0;
+		return L_4;
+	}
+}
+// Method Definition Index: 45789
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_v, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ___0_v;
+		float L_1 = L_0.___x;
+		(&V_0)->___x = L_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_2 = ___0_v;
+		float L_3 = L_2.___y;
+		(&V_0)->___y = L_3;
+		(&V_0)->___z = (0.0f);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = V_0;
+		return L_4;
+	}
+}
+// Method Definition Index: 45627
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1917,7 +5207,7 @@ IL_0040:
 		return L_19;
 	}
 }
-// Method Definition Index: 45790
+// Method Definition Index: 45794
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_get_left_m851D1A435131CE336F60115E19FC8C21480284BC_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1931,7 +5221,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2D
 		return L_0;
 	}
 }
-// Method Definition Index: 45779
+// Method Definition Index: 45783
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Multiply_m2D984B613020089BF5165BA4CA10988E2DC771FE_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_a, float ___1_d, const RuntimeMethod* method) 
 {
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
@@ -1950,7 +5240,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2D
 		return L_6;
 	}
 }
-// Method Definition Index: 45781
+// Method Definition Index: 45785
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Division_m57A2DCD71E0CE7420851D705D1951F9238902AAB_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_a, float ___1_d, const RuntimeMethod* method) 
 {
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
@@ -1969,7 +5259,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2D
 		return L_6;
 	}
 }
-// Method Definition Index: 45789
+// Method Definition Index: 45793
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_get_down_m7672D87B9C778FB2AEF7BB79758142D01166B493_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1983,7 +5273,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2D
 		return L_0;
 	}
 }
-// Method Definition Index: 45774
+// Method Definition Index: 45778
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Addition_m8136742CE6EE33BA4EB81C5F584678455917D2AE_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_a, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_b, const RuntimeMethod* method) 
 {
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
@@ -2004,7 +5294,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2D
 		return L_8;
 	}
 }
-// Method Definition Index: 45604
+// Method Definition Index: 45608
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m5F87930F9B0828E5652E2D9D01ED907C01122C86_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, const RuntimeMethod* method) 
 {
 	{
@@ -2016,56 +5306,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m5F87930F9B082
 		return;
 	}
 }
-// Method Definition Index: 45642
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) 
-{
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	{
-		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_a;
-		float L_1 = L_0.___x;
-		float L_2 = ___1_d;
-		(&V_0)->___x = ((float)il2cpp_codegen_multiply(L_1, L_2));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___0_a;
-		float L_4 = L_3.___y;
-		float L_5 = ___1_d;
-		(&V_0)->___y = ((float)il2cpp_codegen_multiply(L_4, L_5));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___0_a;
-		float L_7 = L_6.___z;
-		float L_8 = ___1_d;
-		(&V_0)->___z = ((float)il2cpp_codegen_multiply(L_7, L_8));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = V_0;
-		return L_9;
-	}
-}
-// Method Definition Index: 45639
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) 
-{
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	{
-		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_a;
-		float L_1 = L_0.___x;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___1_b;
-		float L_3 = L_2.___x;
-		(&V_0)->___x = ((float)il2cpp_codegen_add(L_1, L_3));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___0_a;
-		float L_5 = L_4.___y;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___1_b;
-		float L_7 = L_6.___y;
-		(&V_0)->___y = ((float)il2cpp_codegen_add(L_5, L_7));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___0_a;
-		float L_9 = L_8.___z;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___1_b;
-		float L_11 = L_10.___z;
-		(&V_0)->___z = ((float)il2cpp_codegen_add(L_9, L_11));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = V_0;
-		return L_12;
-	}
-}
-// Method Definition Index: 45666
+// Method Definition Index: 45670
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2079,7 +5320,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E
 		return L_0;
 	}
 }
-// Method Definition Index: 45749
+// Method Definition Index: 45753
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___0_x, float ___1_y, const RuntimeMethod* method) 
 {
 	{
@@ -2090,7 +5331,34 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFF
 		return;
 	}
 }
-// Method Definition Index: 45632
+// Method Definition Index: 45798
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Vector2Int_get_x_mA2CACB1B6E6B5AD0CCC32B2CD2EDCE3ECEB50576_inline (Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->___m_X;
+		return L_0;
+	}
+}
+// Method Definition Index: 45800
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Vector2Int_get_y_m48454163ECF0B463FB5A16A0C4FC4B14DB0768B3_inline (Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->___m_Y;
+		return L_0;
+	}
+}
+// Method Definition Index: 45802
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2Int__ctor_mC20D1312133EB8CB63EC11067088B043660F11CE_inline (Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A* __this, int32_t ___0_x, int32_t ___1_y, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_x;
+		__this->___m_X = L_0;
+		int32_t L_1 = ___1_y;
+		__this->___m_Y = L_1;
+		return;
+	}
+}
+// Method Definition Index: 45636
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2104,7 +5372,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_0;
 	}
 }
-// Method Definition Index: 45598
+// Method Definition Index: 45602
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Lerp_m3A906D0530A94FAABB94F0F905E84D99BE85C3F8_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, float ___2_t, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -2151,34 +5419,112 @@ IL_0064:
 		return L_24;
 	}
 }
-// Method Definition Index: 9571
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) 
+// Method Definition Index: 45717
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline (float ___0_a, float ___1_b, const RuntimeMethod* method) 
 {
-	int32_t V_0 = 0;
+	float V_0 = 0.0f;
+	float G_B3_0 = 0.0f;
 	{
-		int32_t L_0 = __this->____version;
-		__this->____version = ((int32_t)il2cpp_codegen_add(L_0, 1));
-	}
-	{
-		int32_t L_1 = __this->____size;
-		V_0 = L_1;
-		__this->____size = 0;
-		int32_t L_2 = V_0;
-		if ((((int32_t)L_2) <= ((int32_t)0)))
+		float L_0 = ___0_a;
+		float L_1 = ___1_b;
+		if ((((float)L_0) > ((float)L_1)))
 		{
-			goto IL_003c;
+			goto IL_0008;
 		}
 	}
 	{
-		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_3 = __this->____items;
-		int32_t L_4 = V_0;
-		Array_Clear_m50BAA3751899858B097D3FF2ED31F284703FE5CB((RuntimeArray*)L_3, 0, L_4, NULL);
-		return;
+		float L_2 = ___1_b;
+		G_B3_0 = L_2;
+		goto IL_0009;
 	}
 
-IL_003c:
+IL_0008:
 	{
+		float L_3 = ___0_a;
+		G_B3_0 = L_3;
+	}
+
+IL_0009:
+	{
+		V_0 = G_B3_0;
+		goto IL_000c;
+	}
+
+IL_000c:
+	{
+		float L_4 = V_0;
+		return L_4;
+	}
+}
+// Method Definition Index: 45679
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Euler_m9262AB29E3E9CE94EF71051F38A28E82AEC73F90_inline (float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
+		float L_0 = ___0_x;
+		(&V_0)->___x = ((float)il2cpp_codegen_multiply(L_0, (0.0174532924f)));
+		float L_1 = ___1_y;
+		(&V_0)->___y = ((float)il2cpp_codegen_multiply(L_1, (0.0174532924f)));
+		float L_2 = ___2_z;
+		(&V_0)->___z = ((float)il2cpp_codegen_multiply(L_2, (0.0174532924f)));
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_3;
+		L_3 = Quaternion_Internal_FromEulerRad_mD0C4C0EFE1D70EC0EA4A92B11F1A4D5B0A134E49((&V_0), NULL);
+		return L_3;
+	}
+}
+// Method Definition Index: 45642
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_right_mFF573AFBBB2186E7AFA1BA7CA271A78DF67E4EA0_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var))->___rightVector;
+		return L_0;
+	}
+}
+// Method Definition Index: 86548
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PuzzlePiece_set_IsValid_m789DECED94569E894C3AD3D2E4156BB5EE732351_inline (PuzzlePiece_t45EFE176918A9BDCDFD65867CE974C72AE5D0EFA* __this, bool ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/arthu/OneDrive/Documentos/GitHub/TCP-IV-2026.1/TCP IV/Assets/Scripts/PuzzlePiece.cs:14>
+		bool L_0 = ___0_value;
+		__this->___U3CIsValidU3Ek__BackingField = L_0;
 		return;
+	}
+}
+// Method Definition Index: 44140
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Rect__ctor_m18C3033D135097BEE424AAA68D91C706D2647F23_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, float ___0_x, float ___1_y, float ___2_width, float ___3_height, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___0_x;
+		__this->___m_XMin = L_0;
+		float L_1 = ___1_y;
+		__this->___m_YMin = L_1;
+		float L_2 = ___2_width;
+		__this->___m_Width = L_2;
+		float L_3 = ___3_height;
+		__this->___m_Height = L_3;
+		return;
+	}
+}
+// Method Definition Index: 45791
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_get_one_m9097EB8DC23C26118A591AF16702796C3EF51DFB_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ((Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_StaticFields*)il2cpp_codegen_static_fields_for(Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var))->___oneVector;
+		return L_0;
 	}
 }
 // Method Definition Index: 9563
@@ -2219,7 +5565,63 @@ IL_0034:
 		return;
 	}
 }
-// Method Definition Index: 45729
+// Method Definition Index: 9552
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->____size;
+		return L_0;
+	}
+}
+// Method Definition Index: 9571
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	{
+		int32_t L_0 = __this->____version;
+		__this->____version = ((int32_t)il2cpp_codegen_add(L_0, 1));
+	}
+	{
+		int32_t L_1 = __this->____size;
+		V_0 = L_1;
+		__this->____size = 0;
+		int32_t L_2 = V_0;
+		if ((((int32_t)L_2) <= ((int32_t)0)))
+		{
+			goto IL_003c;
+		}
+	}
+	{
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_3 = __this->____items;
+		int32_t L_4 = V_0;
+		Array_Clear_m50BAA3751899858B097D3FF2ED31F284703FE5CB((RuntimeArray*)L_3, 0, L_4, NULL);
+		return;
+	}
+
+IL_003c:
+	{
+		return;
+	}
+}
+// Method Definition Index: 1793
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Nullable_1_get_HasValue_mC149B1C717AF506BBE8932F2C1DC86C378D17EA8_gshared_inline (Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75* __this, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = __this->___hasValue;
+		return L_0;
+	}
+}
+// Method Definition Index: 2790
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_gshared_inline (const RuntimeMethod* method) 
+{
+	il2cpp_rgctx_method_init(method);
+	{
+		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->rgctx_data, 2));
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_0 = ((EmptyArray_1_tDF0DD7256B115243AA6BD5558417387A734240EE_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->rgctx_data, 2)))->___Value;
+		return L_0;
+	}
+}
+// Method Definition Index: 45733
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline (float ___0_value, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
