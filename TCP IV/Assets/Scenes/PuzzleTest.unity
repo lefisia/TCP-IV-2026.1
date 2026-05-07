@@ -959,7 +959,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GridGenerator
   puzzleController: {fileID: 2102879729}
   puzzlePiecePrefab: {fileID: 5169829664533278938, guid: b305dc3881ed3934ba122e46b4f3d77f, type: 3}
-  gridSize: 5
+  gridSize: 4
 --- !u!1 &1567574858
 GameObject:
   m_ObjectHideFlags: 0
@@ -1201,7 +1201,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2102879728}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdcf75283f6ad5942a4def26fd722b0c, type: 3}
+  m_Script: {fileID: 11500000, guid: 6bff1c2f7b158e94bb131bb20ad38fba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleController
 --- !u!4 &2102879730
