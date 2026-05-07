@@ -19,6 +19,7 @@
           {
             "name": "NavMeshSettings",
             "scenes": [
+              "Assets/Scenes/AR Scene.unity",
               "Assets/Scenes/PuzzleTest.unity"
             ],
             "dependencyType": 1,
@@ -76,6 +77,7 @@
           {
             "name": "AudioBehaviour",
             "scenes": [
+              "Assets/Scenes/AR Scene.unity",
               "Assets/Scenes/PuzzleTest.unity"
             ],
             "dependencyType": 0,
@@ -90,6 +92,7 @@
           {
             "name": "AudioListener",
             "scenes": [
+              "Assets/Scenes/AR Scene.unity",
               "Assets/Scenes/PuzzleTest.unity"
             ],
             "dependencyType": 0,
@@ -133,6 +136,7 @@
           {
             "name": "Camera",
             "scenes": [
+              "Assets/Scenes/AR Scene.unity",
               "Assets/Scenes/PuzzleTest.unity"
             ],
             "dependencyType": 0,
@@ -153,6 +157,7 @@
           {
             "name": "Cubemap",
             "scenes": [
+              "Assets/Scenes/AR Scene.unity",
               "Assets/Scenes/PuzzleTest.unity"
             ],
             "dependencyType": 0,
@@ -173,6 +178,7 @@
           {
             "name": "EditorExtension",
             "scenes": [
+              "Assets/Scenes/AR Scene.unity",
               "Assets/Scenes/PuzzleTest.unity"
             ],
             "dependencyType": 1,
@@ -187,6 +193,7 @@
           {
             "name": "GameObject",
             "scenes": [
+              "Assets/Scenes/AR Scene.unity",
               "Assets/Scenes/PuzzleTest.unity"
             ],
             "dependencyType": 0,
@@ -219,6 +226,7 @@
           {
             "name": "LevelGameManager",
             "scenes": [
+              "Assets/Scenes/AR Scene.unity",
               "Assets/Scenes/PuzzleTest.unity"
             ],
             "dependencyType": 1,
@@ -227,6 +235,7 @@
           {
             "name": "Light",
             "scenes": [
+              "Assets/Scenes/AR Scene.unity",
               "Assets/Scenes/PuzzleTest.unity"
             ],
             "dependencyType": 0,
@@ -253,6 +262,7 @@
           {
             "name": "LightmapSettings",
             "scenes": [
+              "Assets/Scenes/AR Scene.unity",
               "Assets/Scenes/PuzzleTest.unity"
             ],
             "dependencyType": 0,
@@ -273,6 +283,7 @@
           {
             "name": "Material",
             "scenes": [
+              "Assets/Scenes/AR Scene.unity",
               "Assets/Scenes/PuzzleTest.unity"
             ],
             "dependencyType": 0,
@@ -281,6 +292,7 @@
           {
             "name": "Mesh",
             "scenes": [
+              "Assets/Scenes/AR Scene.unity",
               "Assets/Scenes/PuzzleTest.unity"
             ],
             "dependencyType": 0,
@@ -289,6 +301,7 @@
           {
             "name": "MeshFilter",
             "scenes": [
+              "Assets/Scenes/AR Scene.unity",
               "Assets/Scenes/PuzzleTest.unity"
             ],
             "dependencyType": 0,
@@ -297,6 +310,7 @@
           {
             "name": "MeshRenderer",
             "scenes": [
+              "Assets/Scenes/AR Scene.unity",
               "Assets/Scenes/PuzzleTest.unity"
             ],
             "dependencyType": 0,
@@ -305,6 +319,7 @@
           {
             "name": "MonoBehaviour",
             "scenes": [
+              "Assets/Scenes/AR Scene.unity",
               "Assets/Scenes/PuzzleTest.unity"
             ],
             "dependencyType": 0,
@@ -319,6 +334,7 @@
           {
             "name": "MonoScript",
             "scenes": [
+              "Assets/Scenes/AR Scene.unity",
               "Assets/Scenes/PuzzleTest.unity"
             ],
             "dependencyType": 1,
@@ -327,6 +343,7 @@
           {
             "name": "NamedObject",
             "scenes": [
+              "Assets/Scenes/AR Scene.unity",
               "Assets/Scenes/PuzzleTest.unity"
             ],
             "dependencyType": 1,
@@ -379,6 +396,7 @@
           {
             "name": "RenderSettings",
             "scenes": [
+              "Assets/Scenes/AR Scene.unity",
               "Assets/Scenes/PuzzleTest.unity"
             ],
             "dependencyType": 0,
@@ -411,6 +429,7 @@
           {
             "name": "Shader",
             "scenes": [
+              "Assets/Scenes/AR Scene.unity",
               "Assets/Scenes/PuzzleTest.unity"
             ],
             "dependencyType": 0,
@@ -567,6 +586,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.identifiers"
+          },
+          {
+            "name": "Required by ImageConversion Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.imageconversion"
           },
           {
             "name": "Required by Input Module",
@@ -809,6 +834,10 @@
             "icon": "package/com.unity.modules.insights"
           }
         ]
+      },
+      {
+        "name": "ImageConversion",
+        "dependencies": []
       },
       {
         "name": "Input",
@@ -1155,6 +1184,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.identifiers"
+          },
+          {
+            "name": "Required by ImageConversion Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.imageconversion"
           },
           {
             "name": "Required by Input Module",
